@@ -1,0 +1,6 @@
+{
+    "tag": "string",
+    "number": "string",
+    "phoneType": "string",
+    "confirmed": "boolean"
+}

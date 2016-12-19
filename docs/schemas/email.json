@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    "properties":{
+        "address": { "type": "string" },
+        "confirmed": { "type": "string" }
+    },
+    "required": ["address"] 
+}

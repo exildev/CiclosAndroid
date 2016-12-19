@@ -1,0 +1,86 @@
+#%RAML 0.8
+displayName: Establishments
+description: Resource that manages the processes related to establishment clients.
+get:
+    description: Returns a list with establishment entities.
+    queryParameters:
+        start:
+            description: Indicates the beginning of the page.
+            type: integer
+        size:
+            description: Indicates the size of the page, if this param is null then its take as value 20.
+            type: integer
+        search:
+            description: String to look for in the list, you can search by nit and name.
+            type: string
+        orderBy:
+            description: The return array of the function will be sorted by this attribute.
+            type: string
+        orderType:
+            description: Indicates if the list will be ordered to way ascendant (ASC) or descendant (DESC)
+            type: string
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include establishment-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new establishment client in the database
+    body:
+        description: Establishment data required
+        schema: Establishment
+        example: !include establishment-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include establishment-example.json
+/{ownerId}:
+    uriParameters:
+        ownerId:
+            displayName: Owner ID
+            type: integer
+    get:
+        description: Returns a establishment entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include establishment-example.json
+            404:
+                description: Establishment not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    put:
+        description: Update a establishment entity by ID provided
+        body:
+            description: Establishment data required
+            schema: Establishment
+            example: !include establishment-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include establishment-example.json
+            404:
+                description: Establishment not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    delete:
+        description: Delete a establishment entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include establishment-example.json
+            404:
+                description: Establishment not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    /addresses: !include addresses/addresses.raml
+    /administrators: !include administrators/administrators.raml
+    /params: !include params/params.raml

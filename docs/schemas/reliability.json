@@ -1,0 +1,16 @@
+{
+    "confidence": { "type": "integer" },
+    "speed": {
+            "type": "string",
+            "enum": ["SLOW", "FAST"]
+        },
+    "management": {
+            "type": "string",
+            "enum": ["LOW", "HIGH"]
+        },
+    "minNumberBase": { "type": "integer" },
+    "minProduction": { "type": "integer" },
+    "minService": { "type": "integer" },
+    "dailySaving": { "type": "integer" },
+    "category": { "type": "string" }
+}

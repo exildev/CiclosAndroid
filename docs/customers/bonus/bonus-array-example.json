@@ -1,0 +1,14 @@
+[
+    {
+        "countFreeService": "number",
+        "countFreeServiceUsed": "number",
+        "expiryDate": "0000-00-00T00:00:00.000Z",
+        "reason": "string",
+        "authorizedBy": "integer",
+        "available": "boolean",
+        "countFreeServiceAvailable": "number",
+        "id": "integer",
+        "registerDate": "0000-00-00T00:00:00.000Z"
+    },
+    ...
+]

@@ -1,0 +1,58 @@
+{
+    "type": "object",
+    "properties": {
+        "id": { "type": "integer" },
+        "identification": { "type": "string" },
+        "name": { "type": "string" },
+        "lastName": { "type": "string" },
+        "gender": {
+            "type": "string",
+            "enum": ["MALE", "FEMALE"]
+        },
+        "birthday": { "type": "date" },
+        "addresses": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": { "type": "integer" },
+                    "tag": { "type": "string" },
+                    "residentialAddress": { "type": "string" },
+                    "neighborhood": { "type": "string" }
+                },
+                "required": ["tag","residentialAddress","neighborhood"]
+            }
+        },
+        "emails": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties":{
+                    "address": { "type": "string" },
+                    "confirmed": { "type": "boolean" }
+                },
+                "required": ["address"] 
+            }
+        },
+        "phones": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tag": { "type": "string" },
+                    "number": { "type": "string" },
+                    "phoneType": {
+                        "type": "string",
+                        "enum": ["CELL_PHONE", "LANDLINE"]
+                    },
+                    "confirmed": { "type": "boolean" }
+                },
+                "required": ["tag", "number"]
+            }
+        },
+        "observations": { "type": "string" },
+        "linked": { "type": "boolean" },
+        "nDayReport": { "type": "integer" }
+    },
+    "required": ["identification", "name", "lastName", "gender"]
+}

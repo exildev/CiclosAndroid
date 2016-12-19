@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "id": { "type": "integer" },
+        "nit": { "type": "string" },
+        "name": { "type": "string" },
+        "observations": { "type": "string" }
+    },
+    "required": ["nit", "name"]
+}

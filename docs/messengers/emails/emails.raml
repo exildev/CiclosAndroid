@@ -1,0 +1,67 @@
+#%RAML 0.8
+get:
+    description: Returns a particular's emails list information by ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include email-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new email to particular client
+    body:
+        schema: Email
+        example: !include email-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include email-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+/{index}:
+    uriParameters:
+        index:
+            displayName: Email index list
+            type: integer
+    get:
+        description: Returns a especific particular email information by particular ID and email index list
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include email-example.json
+            404:
+                description: Email not found
+                body:
+                    example: ../../examples/not-found-example.json
+    put:
+        description: Update a particular email information by particular ID and email index list
+        body:
+            schema: Email
+            example: !include email-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include email-example.json
+            404:
+                description: Email not found
+                body:
+                    example: ../../examples/not-found-example.json
+    delete:
+        description: Delete a particular email by particular ID and email index list
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include email-example.json
+            404:
+                description: Email not found
+                body:
+                    example: ../../examples/not-found-example.json

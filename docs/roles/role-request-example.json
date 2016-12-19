@@ -1,0 +1,10 @@
+{
+    "name": "string",
+    "permission": [
+        {
+            "functionality": "string",
+            "permissionType": "ADMIN|WRITE|READ"
+        },
+        ...
+    ]
+}

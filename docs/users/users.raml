@@ -1,0 +1,79 @@
+#%RAML 0.8
+displayName: Users
+description: Resource that manages the processes related to users of the platform.
+get:
+    description: Get a information list about a users.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    queryParameters:
+        start:
+            description: Start query param used to change initial user of the list.
+            type: integer
+        size:
+            description: If this query param is not provides then the service automatically assigns the value 20.
+            type: integer
+        type:
+            description: This query param is user type and it's used to filter the list.
+            enum: ["SUPER_USER", "ADMINISTRATOR", "OPERATOR", "MESSENGER", "CLIENT"]
+    responses:
+        200:
+            description: Sucessfull request.
+            body:
+                example: !include user-array-example.json
+        400: !include ../errors/error-400.raml
+post:
+    description: Add a new user in the database.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    body:
+        description: User information is required.
+        schema: User
+        example: !include user-example.json
+    responses:
+        201:
+            description: It has created a new user.
+            body:
+                example: !include user-example.json
+/{userId}:
+    description: A specific user, a member of the users collection.
+    uriParameters:
+        userId:
+            displayName: User ID
+            type: integer
+    get:
+        description: Get information about the user.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include user-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    put:
+        description: Update information about the specific user.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        body:
+            description: User information is required.
+            schema: User
+            example: !include user-example.json
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include user-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    delete:
+        description: Delete user in the database.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include user-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml

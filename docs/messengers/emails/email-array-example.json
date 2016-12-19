@@ -1,0 +1,7 @@
+[
+    {
+        "address": "string",
+        "confirmed": "boolean"
+    },
+    ...
+]

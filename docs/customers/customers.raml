@@ -1,0 +1,42 @@
+#%RAML 0.8
+displayName: Customers
+description: Resource that manages the processes related to customers
+get:
+    description: Returns a list with customers entities
+    queryParameters:
+        start:
+            description: Indicates the beginning of the page.
+            type: integer
+        size:
+            description: Indicates the size of the page, if this param is null then its take as value 20.
+            type: integer
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include customers-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+/{id}:
+    uriParameters:
+        id:
+            displayName: Customer ID
+            type: integer
+    get:
+        description: Returns a customer entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include customer-example.json
+            404:
+                description: Customer not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    /bonus: !include bonus/bonus.raml
+    /creditinfo: !include credit-info/credit-info.raml
+    /banned: !include banned/banned.raml
+/particulars: !include particulars/particulars.raml
+/establishments: !include establishments/establishments.raml

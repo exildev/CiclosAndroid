@@ -1,0 +1,18 @@
+[
+    {
+        "id": "integer",
+        "nit": "string",
+        "name": "string",
+        "observations": "string",
+        "addresses": [
+            {
+                "id": "integer",
+                "tag": "string",
+                "residentialAddress": "string",
+                "neighborhood": "string"
+            },
+            ...
+        ]
+    },
+    ...
+]

@@ -1,0 +1,32 @@
+{
+    "id": "integer",
+    "identification": "string",
+    "name": "string",
+    "lastName": "string",
+    "gender": "string",
+    "birthday": "0000-00-00T00:00:00-00:00",
+    "observations": "string",
+    "linked": "boolean",
+    "nDayReport": "integer",
+    "emails": [
+        {
+            "address": "string",
+            "confirmed": "boolean"
+        }
+    ],
+    "addresses": [
+        {
+            "tag": "string",
+            "residentialAddress": "string",
+            "neighborhood": "string"
+        }
+    ],
+    "phones": [
+        {
+            "tag": "string",
+            "number": "string",
+            "type": "string",
+            "confirmed": "boolean"
+        }
+    ]
+}

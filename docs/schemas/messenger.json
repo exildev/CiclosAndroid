@@ -1,0 +1,111 @@
+{
+    "type": "object",
+    "properties": {
+        "birthday": { "type": "string" },
+        "dismissal": { "type": "boolean"},
+        "gender": {
+            "type": "string",
+            "enum": ["MALE", "FEMALE"]
+        },
+        "identification": { "type": "string" },
+        "lastName": { "type": "string" },
+        "name": { "type": "string" },
+        "addresses": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": { "type": "integer" },
+                    "tag": { "type": "string" },
+                    "residentialAddress": { "type": "string" },
+                    "neighborhood": { "type": "string" }
+                },
+                "required": ["tag","residentialAddressName","neighborhood"]
+            }
+        },
+        "curriculumVitae": {
+            "type": "object",
+            "properties": {
+                "academicLevel": { "type": "string" },
+                "birthCity": { "type": "string" },
+                "civilStatus": {
+                    "type": "string",
+                    "enum": [
+                                "SINGLE","MARRIED","WIDOWER",
+                                "COMMITTED","DIVORCED"
+                            ]
+                },
+                "district": { "type": "string" },
+                "militaryCard": { "type": "string" },
+                "photo": { "type": "string" },
+                "home": {
+                    "type": "object",
+                    "properties": {
+                        "homeownership": {
+                            "type": "string",
+                            "enum": ["INDIVIDUAL","BORROWED"]
+                        },
+                        "monthlyExpenses": { "type": "string" },
+                        "sonsNumber": { "type": "integer" },
+                        "stratum": { "type": "integer" },
+                        "id": { "type": "integer" }
+                    },
+                    "required": [
+                        "homeownership", "monthlyExpenses", "sonsNumber",
+                        "stratum"
+                    ]
+                },
+                "id": "integer",
+                "socialSecurity": {
+                    "type": "object",
+                    "properties": {
+                        "nameARL": { "type": "string" },
+                        "nameEPS": { "type": "string" },
+                        "pensionEntity": { "type": "string" },
+                        "id": { "type": "integer" }
+                    },
+                    "required": [
+                        "nameARL", "nameEPS", "pensionEntity"
+                    ]
+                }
+            },
+            "required": [
+                "academicLevel", "birthCity", "civilStatus",
+                "district", "militaryCard", "photo", "home",
+                "socialSecurity"
+            ]
+        },
+        "emails": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties":{
+                    "address": { "type": "string" },
+                    "confirmed": { "type": "boolean" }
+                },
+                "required": ["address"] 
+            }
+        },
+        "id": { "type": "integer" },
+        "phones": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tag": { "type": "string" },
+                    "number": { "type": "string" },
+                    "phoneType": {
+                        "type": "string",
+                        "enum": ["CELL_PHONE", "LANDLINE"]
+                    },
+                    "confirmed": { "type": "boolean" }
+                },
+                "required": ["tag", "number"]
+            }
+        }
+    },
+    "required": [
+        "birthday", "dismissal", "gender", "identification",
+        "lastName", "name", "curriculumVitae"
+    ]
+}

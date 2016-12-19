@@ -1,0 +1,67 @@
+#%RAML 0.8
+get:
+    description: Returns a establishment's admnistrator list information by ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include administrator-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+post:
+    description: Add a new administrator to establishment client
+    body:
+        schema: Administrator
+        example: !include administrator-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include administrator-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+/{id}:
+    uriParameters:
+        id:
+            displayName: Administrator ID
+            type: integer
+    get:
+        description: Returns a especific establishment administrator information by establishment ID and administrator ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include administrator-example.json
+            404:
+                description: Administrator not found
+                body:
+                    example: !include ../../../examples/not-found-example.json
+    put:
+        description: Update a establishment administrator information by establishment ID and administrator ID
+        body:
+            schema: Administrator
+            example: !include administrator-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include administrator-example.json
+            404:
+                description: Administrator not found
+                body:
+                    example: !include ../../../examples/not-found-example.json
+    delete:
+        description: Delete a establishment administrator by establishment ID and administrator ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include administrator-example.json
+            404:
+                description: Administrator not found
+                body:
+                    example: !include ../../../examples/not-found-example.json

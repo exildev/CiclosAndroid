@@ -1,0 +1,68 @@
+#%RAML 0.8
+get:
+    description: Return the blacklist messengers associated to establishment client
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include blacklist-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../../examples/bad-request-example.json
+        404:
+            description: Establishment not found
+            body:
+                example: !include ../../../../examples/not-found-example.json
+post:
+    description: Add a messenger to blacklist
+    queryParameters:
+        messengerId:
+            description: Messenger id to add in the blacklist
+            type: integer
+            required: true
+    responses:
+        200:
+            description: Successfull resquest
+            body:
+                example: !include blacklist-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../../examples/bad-request-example.json
+        404:
+            description: Establishment or Messenger not found
+            body:
+                example: !include ../../../../examples/not-found-example.json
+/{index}:
+    get:
+        description: Return a single messengers information from the blacklist
+        responses:
+            200:
+                description: Successfull resquest
+                body:
+                    example: !include blacklist-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../../../../examples/bad-request-example.json
+            404:
+                description: Establishment or Messenger index not found
+                body:
+                    example: !include ../../../../examples/not-found-example.json
+    delete:
+        description: Delete a messenger from the blacklist
+        responses:
+            200:
+                description: Successfull resquest
+                body:
+                    example: !include blacklist-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../../../../examples/bad-request-example.json
+            404:
+                description: Establishment or Messenger index not found
+                body:
+                    example: !include ../../../../examples/not-found-example.json
+        

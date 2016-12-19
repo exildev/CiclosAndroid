@@ -1,0 +1,16 @@
+[
+    {
+        "id": "long",
+        "username": "string",
+        "email": "string",
+        "password": "string",
+        "displayName": "string",
+        "roleId": "long",
+        "userType": "string",
+        "operations": ["integer"],
+        "enabled": "boolean",
+        "created": "0000-00-00T00:00:00Z",
+        "updated": "0000-00-00T00:00:00Z"
+    },
+    ...
+]

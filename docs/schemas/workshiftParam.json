@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "breakDay": { "type": "integer" },
+        "festiveDay": { "type": "long" },
+        "workDay": { "type": "long" },
+        "id": { "type": "long" }
+    },
+    "required": ["festiveDay", "workDay", "breakDay"]
+}

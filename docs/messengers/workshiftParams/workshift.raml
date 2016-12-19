@@ -1,0 +1,44 @@
+#%RAML 0.8
+get:
+    description: Return work shift information by messenger ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include workshift-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new work shift to mesenger
+    body:
+        schema: WorkshiftParam
+        example: !include workshift-example.json
+    responses:
+        201:
+            description: Successfull request
+            body:
+                example: !include workshift-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+put:
+    description: Update work shift information by messenger ID provided
+    body:
+        schema: WorkshiftParam
+        example: !include workshift-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include workshift-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+        404:
+            description: Work shift not found
+            body:
+                example: ../../examples/not-found-example.json

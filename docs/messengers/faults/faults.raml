@@ -1,0 +1,67 @@
+#%RAML 0.8
+get:
+    description: Returns a messenger's faults list information by ID provided. 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include fault-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new fault to messenger
+    body:
+        schema: Fault
+        example: !include fault-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include fault-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+/{index}:
+    uriParameters:
+            index:
+                displayName: Fault index in list.
+                type: integer
+    get:
+        description: Returns a specific messenger's fault information by messenger ID and fault index.
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include fault-example.json
+            404:
+                description: Fault not found
+                body:
+                    example: ../../examples/not-found-example.json
+    put:
+        description: Update a messenger's fault information by messenger ID and fault index.
+        body:
+            schema: Fault
+            example: !include fault-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include fault-example.json
+            404:
+                description: Fault not found
+                body:
+                    example: ../../examples/not-found-example.json
+    delete:
+        description: Delete a messenger's fault by messenger ID and fault index
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include fault-example.json
+            404:
+                description: Fault not found
+                body:
+                    example: ../../examples/not-found-example.json 

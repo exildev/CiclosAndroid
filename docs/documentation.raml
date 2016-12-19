@@ -1,0 +1,17 @@
+#%RAML 0.8
+title: Arpia REST
+version: v1
+baseUri: http://localhost:8084/api.arpia/{version}
+mediaType: application/json
+schemas: !include schemas.raml
+securedBy: [jwt]
+securitySchemes:
+    - jwt: !include jwt.raml
+
+/users: !include users/users.raml
+/roles: !include roles/roles.raml
+/operations: !include operations/operations.raml
+/customers: !include customers/customers.raml
+/neighborhoods: !include neighborhoods/neighborhoods.raml
+/messengers: !include messengers/messengers.raml
+/workshifts: !include workshifts/workshift.raml

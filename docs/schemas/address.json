@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "id": { "type": "integer" },
+        "tag": { "type": "string" },
+        "residentialAddress": { "type": "string" },
+        "neighborhood": { "type": "integer" }
+    },
+    "required": ["tag", "residentialAddress", "neighborhood"]
+}

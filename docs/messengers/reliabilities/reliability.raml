@@ -1,0 +1,44 @@
+#%RAML 0.8
+get:
+    description: Return reliability information by messenger ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include reliability-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new reliability to mesenger
+    body:
+        schema: Reliability
+        example: !include reliability-example.json
+    responses:
+        201:
+            description: Successfull request
+            body:
+                example: !include reliability-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+put:
+    description: Update reliability information by messenger ID provided
+    body:
+        schema: Reliability
+        example: !include reliability-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include reliability-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+        404:
+            description: Reliability not found
+            body:
+                example: ../../examples/not-found-example.json

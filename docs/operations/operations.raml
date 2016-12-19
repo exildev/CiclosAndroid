@@ -1,0 +1,71 @@
+#%RAML 0.8
+displayName: Operations
+description: Resource that manages the processes related to operations.
+get:
+    description: Get a list of all operations information.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    responses:
+        200:
+            description: Sucessfull request.
+            body:
+                example: !include operation-array-example.json
+        400: !include ../errors/error-400.raml
+post:
+    description: |
+        Add new operation, when a operation is created then an user administrator 
+        is created.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    body:
+        description: The operation information is required to created.
+        schema: Operation
+        example: !include operation-request-example.json
+    responses:
+        201:
+            description: It has created a new operation and user administrator.
+            body:
+                example: !include operation-response-example.json
+/{operationId}:
+    description: A specific operation, a item of the operations list.
+    uriParameters:
+        operationId:
+            displayName: Operation ID
+            type: integer
+    get:
+        description: Get information about a operation.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include operation-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    put:
+        description: Update information about the specific operation.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        body:
+            description: The operation information is required to updated.
+            schema: Operation
+            example: !include operation-request-example.json
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include operation-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    delete:
+        description: Delete operation in the database.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include operation-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml

@@ -1,0 +1,9 @@
+{
+    "documentation": "http://localhost:8084/api.arpia",
+    "statusCode": "404",
+    "messages": [
+        {
+            "message": "string"
+        }
+    ]
+}

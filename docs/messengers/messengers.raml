@@ -1,0 +1,76 @@
+#%RAML 0.8
+displayName: Messengers
+description: Resource that manages the processes related to messengers.
+
+get:
+    description: Returns a list with messengers entities
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include messenger-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+
+post:
+    description: Add a new messenger in the database
+    body:
+        description: Messenger data required
+        schema: Messenger
+        example: !include messenger-example.json
+    responses:
+        201:
+            description: Successfull request
+            body:
+                example: !include messenger-example.json
+/{ownerId}:
+    uriParameters:
+        ownerId:
+            displayName: Owner ID
+            type: integer
+    get:
+        description: Returns a messenger entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include messenger-example.json
+            404:
+                description: Messenger not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    put:
+        description: Update a messenger entity by ID provided
+        body:
+            description: Messenger data required
+            schema: Messenger
+            example: !include messenger-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include messenger-example.json
+            404:
+                description: Messenger not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    delete:
+        description: Delete a messenger entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include messenger-example.json
+            404:
+                description: Messenger not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    /addresses: !include addresses/addresses.raml
+    /emails: !include emails/emails.raml
+    /faults: !include faults/faults.raml
+    /phones: !include phones/phones.raml
+    /vehicles: !include vehicles/vehicles.raml
+    /workshifts: !include workshiftParams/workshift.raml
+    /reliabilities: !include reliabilities/reliability.raml

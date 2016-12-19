@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {"type": "integer"},
+        "name": {"type": "string"},
+        "permissions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "functionality": {"type": "string"},
+                    "permissionType": {
+                        "type": "string",
+                        "enum": ["ADMIN", "WRITE", "READ"]
+                    }
+                },
+                "required": ["functionality", "permissionType"]
+            }
+        }
+    },
+    "required": ["name", "permissions"]
+}

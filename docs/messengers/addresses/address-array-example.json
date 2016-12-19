@@ -1,0 +1,9 @@
+[
+    {
+        "id": "integer",
+        "tag": "string",
+        "residentialAddress": "string",
+        "neighborhood": "string"
+    },
+    ...
+]

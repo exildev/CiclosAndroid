@@ -1,0 +1,8 @@
+{
+    "authorizedCredit": "boolean",
+    "bill": "boolean",
+    "paymentCheckout": "boolean",
+    "personInCharge": "integer",
+    "retefuente": "boolean",
+    "reteica": "number|0.0-1.0"
+}

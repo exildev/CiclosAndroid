@@ -1,0 +1,14 @@
+{
+  "alwaysMoneyReturn": "boolean",
+  "denied": "boolean",
+  "urgentOrders": "boolean",
+  "condition": "string",
+  "specialRateInfo": "string",
+  "favoriteMessengerId": "integer",
+  "tracing": {
+  	"reportPeriod": "DAILY|WEEKLY|MONTHLY|QUARTERLY|BIANNUAL|ANNUAL",
+  	"reports": [
+  		"VOLUME|LUNCH|RESTAURANT|SUPERMARKET|COMPANY"
+  	]
+  }
+}

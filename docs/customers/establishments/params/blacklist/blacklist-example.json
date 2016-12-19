@@ -1,0 +1,7 @@
+{
+    "identification": "string",
+    "name": "string",
+    "lastName": "string",
+    "gender": "string",
+    "birthday": "0000-00-00T00:00:00-00:00"
+}

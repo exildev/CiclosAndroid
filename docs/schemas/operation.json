@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "id" : {"type": "long"},
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "imageUrl": {"type": "string"},
+        "administrator": {"type": "string"},
+        "email": {"type": "string"},
+        "password": {"type": "string"},
+        "adminUserId": {"type": "long"}
+    },
+    "required": ["name", "administrator", "email", "password"]
+}

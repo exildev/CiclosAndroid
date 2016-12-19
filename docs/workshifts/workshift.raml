@@ -1,0 +1,63 @@
+#%RAML 0.8
+displayName: Workshifts
+description: Resource that manages the processes related to workshifts.
+
+get:
+    description: Return workshift information 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include workshift-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+post:
+    description: Add a new workshift
+    body:
+        schema: Workshift
+        example: !include workshift-example.json
+    responses:
+        201:
+            description: Successfull request
+            body:
+                example: !include workshift-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+put:
+    description: Update work shift information by messenger ID provided
+    body:
+        schema: Workshift
+        example: !include workshift-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include workshift-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+        404:
+            description: Workshift not found
+            body:
+                example: !include ../examples/not-found-example.json
+/{workshiftId}:
+    uriParameters:
+            workshiftId:
+                displayName: Workshift id.
+                type: integer
+    get:
+        description: Returns a specific workshift information by ID.
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include workshift-example.json
+            404:
+                description: Workshift not found
+                body:
+                    example: !include ../examples/not-found-example.json

@@ -1,0 +1,71 @@
+#%RAML 0.8
+displayName: Roles
+description: Resource that manages the processes related to roles.
+get:
+    description: Get a information list about a roles.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    responses:
+        200:
+            description: Sucessfull request.
+            body:
+                example: !include role-array-example.json
+        400: !include ../errors/error-400.raml
+post:
+    description: Add a new role in the database.
+    headers:
+        Accept-Language: !include ../accept-language.raml
+    body:
+        description: Role information is required.
+        schema: Role
+        example: !include role-request-example.json
+    responses:
+        201:
+            description: It has created a new role.
+            body:
+                example: !include role-response-example.json
+/{roleId}:
+    description: A specific role, a member of the roles collection.
+    uriParameters:
+        roleId:
+            displayName: Role ID
+            type: integer
+    get:
+        description: Get information about a role.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include role-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    put:
+        description: |
+            Update information about the specific role. this method does 
+            not change the permission list.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        body:
+            description: Role information is required.
+            schema: Role
+            example: !include role-request-example.json
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include role-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml
+    delete:
+        description: Delete role in the database.
+        headers:
+            Accept-Language: !include ../accept-language.raml
+        responses:
+            200:
+                description: Successfull request.
+                body:
+                    example: !include role-response-example.json
+            400: !include ../errors/error-400.raml
+            404: !include ../errors/error-404.raml

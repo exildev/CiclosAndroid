@@ -1,0 +1,67 @@
+#%RAML 0.8
+get:
+    description: Returns a particular's addresses list information by ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include address-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+post:
+    description: Add a new address to particular client
+    body:
+        schema: Address
+        example: !include address-request-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include address-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+/{id}:
+    uriParameters:
+            id:
+                displayName: Address ID
+                type: integer
+    get:
+        description: Returns a especific particular address information by particular ID and address ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include address-example.json
+            404:
+                description: Address not found
+                body:
+                    example: ../../../examples/not-found-example.json
+    put:
+        description: Update a particular address information by particular ID and address ID
+        body:
+            schema: Address
+            example: !include address-request-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include address-example.json
+            404:
+                description: Address not found
+                body:
+                    example: ../../../examples/not-found-example.json
+    delete:
+        description: Delete a particular address by particular ID and address ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include address-example.json
+            404:
+                description: Address not found
+                body:
+                    example: ../../../examples/not-found-example.json 

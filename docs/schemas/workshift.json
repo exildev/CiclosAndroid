@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "enterTime": "0000-00-00T00:00:00.000-00:00",
+	    "exitTime": "0000-00-00T00:00:00.000-00:00",
+        "id": { "type": "long" }
+    },
+    "required": ["enterTime", "exitTime"]
+}

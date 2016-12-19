@@ -1,0 +1,34 @@
+#%RAML 0.8
+get:
+    description: Returns the parameters associated to particular client
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include params-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+        404:
+            description: Particular not found
+            body:
+                example: !include ../../../examples/not-found-example.json
+put:
+    description: Edit the parameters associated to particular client
+    body:
+        example: !include params-example.json
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include params-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../../examples/bad-request-example.json
+        404:
+            description: Particular not found
+            body:
+                example: !include ../../../examples/not-found-example.json
+/blacklist: !include blacklist/blacklist.raml

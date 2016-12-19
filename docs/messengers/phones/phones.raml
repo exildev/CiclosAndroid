@@ -1,0 +1,67 @@
+#%RAML 0.8
+get:
+    description: Returns a particular's phones list information by ID provided 
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include phone-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new phone to particular client
+    body:
+        schema: Phone
+        example: !include phone-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include phone-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+/{index}:
+    uriParameters:
+        index:
+            displayName: Phone index list
+            type: integer
+    get:
+        description: Returns a especific particular phone information by particular ID and phone index list
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include phone-example.json
+            404:
+                description: Phone not found
+                body:
+                    example: ../../examples/not-found-example.json
+    put:
+        description: Update a particular phone information by particular ID and phone index list
+        body:
+            schema: Phone
+            example: !include phone-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include phone-example.json
+            404:
+                description: Phone not found
+                body:
+                    example: ../../examples/not-found-example.json
+    delete:
+        description: Delete a particular phone by particular ID and phone index list
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include phone-example.json
+            404:
+                description: Phone not found
+                body:
+                    example: ../../examples/not-found-example.json

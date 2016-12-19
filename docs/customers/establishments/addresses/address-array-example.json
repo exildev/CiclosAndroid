@@ -1,0 +1,12 @@
+[
+    {
+        "id": "integer",
+        "tag": "string",
+        "residentialAddress": "string",
+        "neighborhood": {
+            "id": "integer",
+            "name": "string"
+        }
+    },
+    ...
+]

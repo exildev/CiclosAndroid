@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+        "documentation": { "type": "string" },
+        "statusCode": { "type": "integer" },
+        "messages": {
+            "type": "array",
+            "$ref": "message.json"
+        }
+    }
+}

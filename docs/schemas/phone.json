@@ -1,0 +1,14 @@
+{
+    "title": "Phones",
+    "type": "object",
+    "properties": {
+        "tag": { "type": "string" },
+        "number": { "type": "string" },
+        "phoneType": {
+            "type": "string",
+            "enum": ["CELL_PHONE", "LANDLINE"]
+        },
+        "confirmed": { "type": "string" }
+    },
+    "required": ["tag", "number"]
+}

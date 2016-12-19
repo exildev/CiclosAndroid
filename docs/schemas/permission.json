@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "functionality": {"type": "string"},
+        "permissionType": {
+            "type": "string",
+            "enum": ["ADMIN", "WRITE", "READ"]
+        }
+    },
+    "required": [
+        "functionality",
+        "permissionType"
+    ]
+}

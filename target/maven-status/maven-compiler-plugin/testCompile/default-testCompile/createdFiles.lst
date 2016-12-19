@@ -1,0 +1,6 @@
+com\nativapps\arpia\util\TextUtilEmailTest.class
+com\nativapps\arpia\util\TextUtilIsEmptyTest.class
+com\nativapps\arpia\util\TextUtilPhoneTest.class
+com\nativapps\arpia\util\TextUtilUsernameTest.class
+com\nativapps\arpia\model\ConfigLanguageTest.class
+com\nativapps\arpia\service\NeighborhoodServiceImplTest.class

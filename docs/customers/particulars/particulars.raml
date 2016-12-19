@@ -1,0 +1,90 @@
+#%RAML 0.8
+displayName: Particulars
+description: Resource that manages the processes related to particular clients
+get:
+    description: Returns a list with particulars entities
+    queryParameters:
+        start:
+            description: Indicates the beginning of the page.
+            type: integer
+        size:
+            description: Indicates the size of the page, if this param is null then its take as value 20.
+            type: integer
+        search:
+            description: String to look for in the list, you can search by identification, name and last name.
+            type: string
+        orderBy:
+            description: The return array of the function will be sorted by this attribute.
+            type: string
+        orderType:
+            description: Indicates if the list will be ordered to way ascendant (ASC) or descendant (DESC)
+            type: string
+        gender:
+            description: Determines the gender to be filtered in the list
+            type: string
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include particular-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new particular client in the database
+    body:
+        description: Particular data required
+        schema: Particular
+        example: !include particular-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include particular-example.json
+/{ownerId}:
+    uriParameters:
+        ownerId:
+            displayName: Owner ID
+            type: integer
+    get:
+        description: Returns a particular entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include particular-example.json
+            404:
+                description: Particular not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    put:
+        description: Update a particular entity by ID provided
+        body:
+            description: Particular data required
+            schema: Particular
+            example: !include particular-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include particular-example.json
+            404:
+                description: Particular not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    delete:
+        description: Delete a particular entity by ID provided
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include particular-example.json
+            404:
+                description: Particular not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    /addresses: !include addresses/addresses.raml
+    /emails: !include emails/emails.raml
+    /phones: !include phones/phones.raml
+    /params: !include params/params.raml

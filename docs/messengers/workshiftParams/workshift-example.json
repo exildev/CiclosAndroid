@@ -1,0 +1,6 @@
+{
+  "breakDay": "integer",
+  "festiveDay": "integer",
+  "workDay": "integer",
+  "id": "integer"
+}

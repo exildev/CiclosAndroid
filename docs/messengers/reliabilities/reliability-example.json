@@ -1,0 +1,11 @@
+{
+    "confidence": "integer",
+    "speed": "SLOW|FAST",
+    "management": "LOW|HIGH",
+    "minNumberBase": "integer",
+    "minProduction": "integer",
+    "minService": "integer",
+    "dailySaving": "integer",
+    "category": "string",
+    "id": "integer"
+}

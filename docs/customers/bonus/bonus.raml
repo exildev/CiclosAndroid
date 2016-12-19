@@ -1,0 +1,74 @@
+#%RAML 0.8
+displayName: Bonus
+description: Resource that manages the processes related to customers bonus
+get:
+    description: Returns a list with the customer's bonus using the provided id
+    queryParameters:
+        start:
+            description: Indicates the beginning of the page.
+            type: integer
+        size:
+            description: Indicates the size of the page, if this param is null then its take as value 20.
+            type: integer
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include bonus-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+post:
+    description: Add a new customer's bonus in the database
+    body:
+        example: !include bonus-request-example.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include bonus-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+/{bonusId}:
+    uriParameters:
+        bonusId:
+            displayName: Bonus ID
+            type: integer
+    get:
+        description: Returns a customer's bonus by provided ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include bonus-example.json
+            404:
+                description: Customer not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    put:
+        description: Update a customer's bonus by provided ID
+        body:
+            example: !include bonus-request-example.json
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include bonus-example.json
+            404:
+                description: Bonus not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+    delete:
+        description: Delete a customer's bonus by provided ID
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include bonus-example.json
+            404:
+                description: Bonus not found
+                body:
+                    example: !include ../../examples/not-found-example.json

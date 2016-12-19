@@ -1,0 +1,87 @@
+#%RAML 0.8
+displayName: Neighborhoods
+description: Resource that manages the processes related to Neighborhoods
+get:
+    description: Returns a list with neighborhoods
+    queryParameters:
+        start:
+            description: Indicates the beginning of the page.
+            type: integer
+        size:
+            description: Indicates the size of the page, if this param is null then its take as value 20.
+            type: integer
+    responses:
+        200:
+            description: Successfull request
+            body: 
+                example: !include neighborhoods-array-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+post:
+    description: Add a new neighborhoods in the database
+    body:
+        example: !include neighborhood-request.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include neighborhood-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../examples/bad-request-example.json
+/{id}:
+    uriParameters:
+        id:
+            displayName: Neighborhood ID
+            type: integer
+    
+    get:
+        description: Returns a neighborhoods by provided ID
+        responses:
+            200:
+                description: Successfull request
+                body: 
+                    example: !include neighborhood-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../examples/bad-request-example.json
+            404:
+                description: Neighborhood not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    put:
+        description: Updates a neighborhoods by provided ID
+        body:
+            example: !include neighborhood-request.json
+        responses:
+            200:
+                description: Successfull request
+                body: 
+                    example: !include neighborhood-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../examples/bad-request-example.json
+            404:
+                description: Neighborhood not found
+                body:
+                    example: !include ../examples/not-found-example.json
+    delete:
+        description: delete a neighborhoods by provided ID
+        responses:
+            200:
+                description: Successfull request
+                body: 
+                    example: !include neighborhood-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../examples/bad-request-example.json
+            404:
+                description: Neighborhood not found
+                body:
+                    example: !include ../examples/not-found-example.json

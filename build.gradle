@@ -1,0 +1,13 @@
+task configPersistence << {
+    println 'running task change lines in persistence.xml'
+    ant.replaceregexp(match:'jdbc:mysql://localhost:3306/arpia_database', replace:'jdbc:mysql://127.0.0.1:51737/localdb', flags:'g', byline:true) {
+        fileset(dir: project.projectDir, includes: 'src/main/resources/META-INF/persistence.xml')
+    }
+    ant.replaceregexp(match:'arpia_user', replace:'azure', flags:'g', byline:true) {
+        fileset(dir: project.projectDir, includes: 'src/main/resources/META-INF/persistence.xml')
+    }
+    ant.replaceregexp(match:'Arpia2016', replace:'6#vWHD_$', flags:'g', byline:true) {
+        fileset(dir: project.projectDir, includes: 'src/main/resources/META-INF/persistence.xml')
+    }
+    println 'finish task change lines in persistence.xml'
+}

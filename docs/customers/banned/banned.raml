@@ -1,0 +1,75 @@
+#%RAML 0.8
+displayName: Banned
+description: Resource that manages the processes related to customers ban history
+post:
+    description: Bans the customer and adds a new history
+    body:
+        example: !include ban-history-request.json
+    responses:
+        200:
+            description: Successfull request
+            body:
+                example: !include ban-history-example.json
+        400:
+            description: Incorrect format
+            body:
+                example: !include ../../examples/bad-request-example.json
+        404:
+            description: Customer not found
+            body:
+                example: !include ../../examples/not-found-example.json
+/cancel:
+    put:
+        description: Cancels customer ban and ends the history
+        responses:
+            200:
+                description: Successfull request
+                body:
+                    example: !include ban-history-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../../examples/bad-request-example.json
+            404:
+                description: Customer not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+/history:
+    get:
+        description: Returns a list with the customer ban histories
+        queryParameters:
+            start:
+                description: Indicates the beginning of the page.
+                type: integer
+            size:
+                description: Indicates the size of the page, if this param is null then its take as value 20.
+                type: integer
+        responses:
+            200:
+                description: Successfull request
+                body: 
+                    example: !include ban-history-array-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../../examples/bad-request-example.json
+            404:
+                description: Customer not found
+                body:
+                    example: !include ../../examples/not-found-example.json
+/last:
+    get:
+        description: Returns the last customer ban history
+        responses:
+            200:
+                description: Successfull request
+                body: 
+                    example: !include ban-history-example.json
+            400:
+                description: Incorrect format
+                body:
+                    example: !include ../../examples/bad-request-example.json
+            404:
+                description: Customer not found
+                body:
+                    example: !include ../../examples/not-found-example.json

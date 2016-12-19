@@ -1,0 +1,56 @@
+[
+    {
+        "birthday": "0000-00-00T00:00:00-00:00",
+        "dismissal": "boolean",
+        "gender": "MALE|FEMALE",
+        "identification": "string",
+        "lastName": "string",
+        "name": "string",
+        "addresses": [
+            {
+                "neighborhood": "string",
+                "residentialAddress": "string",
+                "tag": "string"
+            }
+            ...
+        ],
+        "curriculumVitae": {
+            "academicLevel": "string",
+            "birthCity": "string",
+            "civilStatus": "SINGLE|MARRIED|WIDOWER|COMMITTED|DIVORCED",
+            "district": "string",
+            "militaryCard": "string",
+            "photo": "string",
+            "home": {
+                "homeownership": "INDIVIDUAL|BORROWED",
+                "monthlyExpenses": "string",
+                "sonsNumber": "integer",
+                "stratum": "integer",
+                "id": "integer"
+            },
+            "id": "integer",
+            "socialSecurity": {
+                "nameARL": "string",
+                "nameEPS": "string",
+                "pensionEntity": "string",
+                "id": "integer"
+            }
+        },
+        "emails": [
+            {
+            "address": "string@mail.com",
+            "confirmed": "boolean"
+            }
+            ...
+        ],
+        "id": "integer",
+        "phones": [
+            {
+                "number": "string",
+                "tag": "string",
+                "confirmed": "boolean"
+            }
+        ]
+    }
+    ...
+]

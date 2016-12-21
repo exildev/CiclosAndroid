@@ -1,0 +1,129 @@
+/* For use in _color-definitions.scss */
+
+$palette-zol:
+
+rgb(178, 221, 255)
+
+rgb(102, 187, 255)
+
+rgb(46, 163, 255)
+
+rgb(0, 128, 229)
+
+rgb(0, 111, 199)
+
+rgb(0, 94, 168)
+
+rgb(0, 77, 137)
+
+rgb(0, 60, 107)
+
+rgb(0, 43, 76)
+
+rgb(0, 26, 46)
+
+rgb(178, 221, 255)
+
+rgb(102, 187, 255)
+
+rgb(0, 111, 199)
+
+rgb(0, 60, 107)
+
+;
+
+
+
+$palette-zol-50: nth($palette-zol, 1);
+
+$palette-zol-100: nth($palette-zol, 2);
+
+$palette-zol-200: nth($palette-zol, 3);
+
+$palette-zol-300: nth($palette-zol, 4);
+
+$palette-zol-400: nth($palette-zol, 5);
+
+$palette-zol-500: nth($palette-zol, 6);
+
+$palette-zol-600: nth($palette-zol, 7);
+
+$palette-zol-700: nth($palette-zol, 8);
+
+$palette-zol-800: nth($palette-zol, 9);
+
+$palette-zol-900: nth($palette-zol, 10);
+
+$palette-zol-A100: nth($palette-zol, 11);
+
+$palette-zol-A200: nth($palette-zol, 12);
+
+$palette-zol-A400: nth($palette-zol, 13);
+
+$palette-zol-A700: nth($palette-zol, 14);
+
+
+
+
+
+$palette-rol:
+
+rgb(255, 236, 238)
+
+rgb(255, 160, 171)
+
+rgb(255, 104, 121)
+
+rgb(255, 32, 58)
+
+rgb(255, 2, 31)
+
+rgb(226, 0, 26)
+
+rgb(195, 0, 22)
+
+rgb(165, 0, 19)
+
+rgb(134, 0, 15)
+
+rgb(104, 0, 12)
+
+rgb(255, 236, 238)
+
+rgb(255, 160, 171)
+
+rgb(255, 2, 31)
+
+rgb(165, 0, 19)
+
+;
+
+
+
+$palette-rol-50: nth($palette-rol, 1);
+
+$palette-rol-100: nth($palette-rol, 2);
+
+$palette-rol-200: nth($palette-rol, 3);
+
+$palette-rol-300: nth($palette-rol, 4);
+
+$palette-rol-400: nth($palette-rol, 5);
+
+$palette-rol-500: nth($palette-rol, 6);
+
+$palette-rol-600: nth($palette-rol, 7);
+
+$palette-rol-700: nth($palette-rol, 8);
+
+$palette-rol-800: nth($palette-rol, 9);
+
+$palette-rol-900: nth($palette-rol, 10);
+
+$palette-rol-A100: nth($palette-rol, 11);
+
+$palette-rol-A200: nth($palette-rol, 12);
+
+$palette-rol-A400: nth($palette-rol, 13);
+
+$palette-rol-A700: nth($palette-rol, 14);

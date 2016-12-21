@@ -1,0 +1,129 @@
+/* For use in _color-definitions.scss */
+
+$palette-azulolimpica:
+
+rgb(178, 221, 255)
+
+rgb(102, 187, 255)
+
+rgb(46, 163, 255)
+
+rgb(0, 128, 229)
+
+rgb(0, 111, 199)
+
+rgb(0, 94, 168)
+
+rgb(0, 77, 137)
+
+rgb(0, 60, 107)
+
+rgb(0, 43, 76)
+
+rgb(0, 26, 46)
+
+rgb(178, 221, 255)
+
+rgb(102, 187, 255)
+
+rgb(0, 111, 199)
+
+rgb(0, 60, 107)
+
+;
+
+
+
+$palette-azulolimpica-50: nth($palette-azulolimpica, 1);
+
+$palette-azulolimpica-100: nth($palette-azulolimpica, 2);
+
+$palette-azulolimpica-200: nth($palette-azulolimpica, 3);
+
+$palette-azulolimpica-300: nth($palette-azulolimpica, 4);
+
+$palette-azulolimpica-400: nth($palette-azulolimpica, 5);
+
+$palette-azulolimpica-500: nth($palette-azulolimpica, 6);
+
+$palette-azulolimpica-600: nth($palette-azulolimpica, 7);
+
+$palette-azulolimpica-700: nth($palette-azulolimpica, 8);
+
+$palette-azulolimpica-800: nth($palette-azulolimpica, 9);
+
+$palette-azulolimpica-900: nth($palette-azulolimpica, 10);
+
+$palette-azulolimpica-A100: nth($palette-azulolimpica, 11);
+
+$palette-azulolimpica-A200: nth($palette-azulolimpica, 12);
+
+$palette-azulolimpica-A400: nth($palette-azulolimpica, 13);
+
+$palette-azulolimpica-A700: nth($palette-azulolimpica, 14);
+
+
+
+
+
+$palette-rojoolimpica:
+
+rgb(255, 236, 238)
+
+rgb(255, 160, 171)
+
+rgb(255, 104, 121)
+
+rgb(255, 32, 58)
+
+rgb(255, 2, 31)
+
+rgb(226, 0, 26)
+
+rgb(195, 0, 22)
+
+rgb(165, 0, 19)
+
+rgb(134, 0, 15)
+
+rgb(104, 0, 12)
+
+rgb(255, 236, 238)
+
+rgb(255, 160, 171)
+
+rgb(255, 2, 31)
+
+rgb(165, 0, 19)
+
+;
+
+
+
+$palette-rojoolimpica-50: nth($palette-rojoolimpica, 1);
+
+$palette-rojoolimpica-100: nth($palette-rojoolimpica, 2);
+
+$palette-rojoolimpica-200: nth($palette-rojoolimpica, 3);
+
+$palette-rojoolimpica-300: nth($palette-rojoolimpica, 4);
+
+$palette-rojoolimpica-400: nth($palette-rojoolimpica, 5);
+
+$palette-rojoolimpica-500: nth($palette-rojoolimpica, 6);
+
+$palette-rojoolimpica-600: nth($palette-rojoolimpica, 7);
+
+$palette-rojoolimpica-700: nth($palette-rojoolimpica, 8);
+
+$palette-rojoolimpica-800: nth($palette-rojoolimpica, 9);
+
+$palette-rojoolimpica-900: nth($palette-rojoolimpica, 10);
+
+$palette-rojoolimpica-A100: nth($palette-rojoolimpica, 11);
+
+$palette-rojoolimpica-A200: nth($palette-rojoolimpica, 12);
+
+$palette-rojoolimpica-A400: nth($palette-rojoolimpica, 13);
+
+$palette-rojoolimpica-A700: nth($palette-rojoolimpica, 14);

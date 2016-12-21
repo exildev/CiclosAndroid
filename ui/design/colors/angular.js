@@ -1,4 +1,4 @@
-$mdThemingProvider.definePalette('azulolimpica', {
+$mdThemingProvider.definePalette('zol', {
   '50': '#b2ddff',
   '100': '#66bbff',
   '200': '#2ea3ff',
@@ -17,7 +17,7 @@ $mdThemingProvider.definePalette('azulolimpica', {
   'contrastDarkColors': '50 100 200 A100 A200'
 });
 
-$mdThemingProvider.definePalette('rojoolimpica', {
+$mdThemingProvider.definePalette('rol', {
   '50': '#ffecee',
   '100': '#ffa0ab',
   '200': '#ff6879',
@@ -36,8 +36,8 @@ $mdThemingProvider.definePalette('rojoolimpica', {
   'contrastDarkColors': '50 100 200 A100 A200'
 });
 
-$mdThemingProvider.theme('mcgtheme')
+$mdThemingProvider.theme('olimpica')
 
-	.primaryPalette('azulolimpica')
+	.primaryPalette('zol')
 
-	.accentPalette('rojoolimpica');
+	.accentPalette('rol');

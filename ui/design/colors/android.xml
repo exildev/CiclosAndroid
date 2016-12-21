@@ -1,59 +1,59 @@
 <resources>
 
-    <color name="azulolimpica_50">#b2ddff</color>
+    <color name="zol_50">#b2ddff</color>
 
-    <color name="azulolimpica_100">#66bbff</color>
+    <color name="zol_100">#66bbff</color>
 
-    <color name="azulolimpica_200">#2ea3ff</color>
+    <color name="zol_200">#2ea3ff</color>
 
-    <color name="azulolimpica_300">#0080e5</color>
+    <color name="zol_300">#0080e5</color>
 
-    <color name="azulolimpica_400">#006fc7</color>
+    <color name="zol_400">#006fc7</color>
 
-    <color name="azulolimpica_500">#005ea8</color>
+    <color name="zol_500">#005ea8</color>
 
-    <color name="azulolimpica_600">#004d89</color>
+    <color name="zol_600">#004d89</color>
 
-    <color name="azulolimpica_700">#003c6b</color>
+    <color name="zol_700">#003c6b</color>
 
-    <color name="azulolimpica_800">#002b4c</color>
+    <color name="zol_800">#002b4c</color>
 
-    <color name="azulolimpica_900">#001a2e</color>
+    <color name="zol_900">#001a2e</color>
 
-    <color name="azulolimpica_A100">#b2ddff</color>
+    <color name="zol_A100">#b2ddff</color>
 
-    <color name="azulolimpica_A200">#66bbff</color>
+    <color name="zol_A200">#66bbff</color>
 
-    <color name="azulolimpica_A400">#006fc7</color>
+    <color name="zol_A400">#006fc7</color>
 
-    <color name="azulolimpica_A700">#003c6b</color>
+    <color name="zol_A700">#003c6b</color>
 
-    <color name="rojoolimpica_50">#ffecee</color>
+    <color name="rol_50">#ffecee</color>
 
-    <color name="rojoolimpica_100">#ffa0ab</color>
+    <color name="rol_100">#ffa0ab</color>
 
-    <color name="rojoolimpica_200">#ff6879</color>
+    <color name="rol_200">#ff6879</color>
 
-    <color name="rojoolimpica_300">#ff203a</color>
+    <color name="rol_300">#ff203a</color>
 
-    <color name="rojoolimpica_400">#ff021f</color>
+    <color name="rol_400">#ff021f</color>
 
-    <color name="rojoolimpica_500">#e2001a</color>
+    <color name="rol_500">#e2001a</color>
 
-    <color name="rojoolimpica_600">#c30016</color>
+    <color name="rol_600">#c30016</color>
 
-    <color name="rojoolimpica_700">#a50013</color>
+    <color name="rol_700">#a50013</color>
 
-    <color name="rojoolimpica_800">#86000f</color>
+    <color name="rol_800">#86000f</color>
 
-    <color name="rojoolimpica_900">#68000c</color>
+    <color name="rol_900">#68000c</color>
 
-    <color name="rojoolimpica_A100">#ffecee</color>
+    <color name="rol_A100">#ffecee</color>
 
-    <color name="rojoolimpica_A200">#ffa0ab</color>
+    <color name="rol_A200">#ffa0ab</color>
 
-    <color name="rojoolimpica_A400">#ff021f</color>
+    <color name="rol_A400">#ff021f</color>
 
-    <color name="rojoolimpica_A700">#a50013</color>
+    <color name="rol_A700">#a50013</color>
 
 <resources>

@@ -216,7 +216,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Clientes");
+            toolbar.setTitle(getString(R.string.shops));
         } else if (id == R.id.piscieros_btn) {
             MenuItem myActionMenuItem = mMenu.findItem(R.id.action_search);
             Log.e("menu item", myActionMenuItem.toString());
@@ -228,7 +228,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Piscineros");
+            toolbar.setTitle(getString(R.string.piscineros));
         } else if (id == R.id.nav_rutas || id == R.id.rutas_btn) {
             startActivity(new Intent(this, RutaActivity.class));
         } else if (id == R.id.nav_recordatorio) {
@@ -245,7 +245,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Reportes");
+            toolbar.setTitle(getString(R.string.reporte));
         } else if (id == R.id.nav_soluciones || id == R.id.soluciones_btn) {
             MenuItem myActionMenuItem = mMenu.findItem(R.id.action_search);
             myActionMenuItem.setVisible(true);
@@ -256,7 +256,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Soluciones");
+            toolbar.setTitle(getString(R.string.soluciones));
         } else if (id == R.id.nav_informativos || id == R.id.informativos_btn) {
             MenuItem myActionMenuItem = mMenu.findItem(R.id.action_search);
             myActionMenuItem.setVisible(true);
@@ -267,7 +267,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Informativos");
+            toolbar.setTitle(getString(R.string.informativos));
         } else if (id == R.id.nav_about) {
             startActivity(new Intent(this, AboutActivity.class));
         } else if (id == R.id.nav_logout) {

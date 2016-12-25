@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Piscix</string>
-    <string name="title_activity_home">Piscix</string>
+    <string name="app_name">Ciclos</string>
+    <string name="title_activity_home">Ciclos</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -12,7 +12,7 @@
 
 
     <string name="tipo_propietario">Propietario/a</string>
-    <string name="title_activity_cliente">ClienteActivity</string>
+    <string name="title_activity_shop">TiendaActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -158,7 +158,7 @@
     <string name="phone_template">3014444070</string>
     <string name="email_template">john.doe@mail.com</string>
     <string name="relate_template">Amigo</string>
-    <string name="nav_clientes">Clientes</string>
+    <string name="nav_shops">Tiendas</string>
     <string name="nav_rutas">Rutas</string>
     <string name="nav_reportes">H. Reportes</string>
     <string name="nav_soluciones">H. Soluciones</string>
@@ -171,17 +171,21 @@
     <string name="profundidad">Profundidad</string>
     <string name="fecha">Fecha:</string>
     <string name="numero">Numero:</string>
-    <string name="cliente">Cliente:</string>
+    <string name="shop">Tienda:</string>
+    <string name="shops">Tiendas</string>
     <string name="fecha_title">Fecha:</string>
     <string name="estado">Estado:</string>
     <string name="piscina">Piscina:</string>
+    <string name="piscineros">Piscineros</string>
     <string name="tipo">Tipo:</string>
     <string name="cierre">Cierre:</string>
     <string name="descripcion_title">Descripción:</string>
     <string name="fotos">Fotos</string>
     <string name="respuestas">Respuestas</string>
     <string name="solucion">Solucion</string>
+    <string name="soluciones">Soluciones</string>
     <string name="reporte">Reporte:</string>
+    <string name="informativos">Informativos</string>
 
 
     <string name="salida_planilla_nombre">Salida de piscina %1$s</string>
@@ -214,4 +218,10 @@
     <string name="no_network">Parece no haber acceso a internet</string>
     <string name="reintentar">Reintentar</string>
     <string name="server_error">Hubo un error al procesar la peticion por favor contactese con el administrador codigo de error: %1$d</string>
+    <string name="recordatorios">Recordatorios</string>
+    <string name="rutas">Rutas</string>
+    <string name="actividades">Actividades</string>
+    <string name="historial_de_reportes">Historial de reportes</string>
+    <string name="historial_de_soluciones">Historial de soluciones</string>
+    <string name="reportes_informativos">Reportes informativos</string>
 </resources>

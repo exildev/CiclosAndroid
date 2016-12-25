@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 
+import co.com.script.ciclos.R;
 import co.com.script.ciclos.VolleySingleton;
 import co.com.script.ciclos.models.Message;
 
@@ -81,7 +82,7 @@ public class Notix {
     }
 
     void setUser(Context context) {
-        String url = "http://104.236.33.228:8050/usuarios/is/login/";
+        String url = context.getString(R.string.url_simple) + "/usuarios/is/login/";
         JsonObjectRequest reportesRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {

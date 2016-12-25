@@ -167,7 +167,7 @@ public class CalendarActivity extends AppCompatActivity {
         SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         String s = formater.format(start.getTime());
         String e = formater.format(end.getTime());
-        String url = "http://104.236.33.228:8050/notificaciones/calendar/?start=" + s + "&end=" + e;
+        String url = getString(R.string.url_simple) + "/notificaciones/calendar/?start=" + s + "&end=" + e;
         Log.i("url", url);
         JsonArrayRequest loginRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override

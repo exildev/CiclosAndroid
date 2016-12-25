@@ -143,7 +143,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if(!inHome){
+        } else if (!inHome) {
             mMenu.findItem(R.id.action_search).setVisible(false);
             inHome = true;
             Fragment fragment = HomeFragment.newInstance(getIntent().getBooleanExtra("piscinero", false));
@@ -153,7 +153,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle("Piscix");
-        }else {
+        } else {
             super.onBackPressed();
         }
     }
@@ -198,12 +198,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    public void menuClicked(View view){
+    public void menuClicked(View view) {
         int id = view.getId();
         menuSelected(id);
     }
 
-    public void menuSelected(int id){
+    public void menuSelected(int id) {
         inHome = false;
 
         if (id == R.id.nav_clientes || id == R.id.clientes_btn) {
@@ -272,7 +272,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this, AboutActivity.class));
         } else if (id == R.id.nav_logout) {
             User.delete(this);
-            String url = "http://104.236.33.228:8050/usuarios/logout/";
+            String url = getString(R.string.url_simple) + "/usuarios/logout/";
             StringRequest request = new StringRequest(url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {

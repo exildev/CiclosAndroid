@@ -173,7 +173,7 @@ public class ClienteFragment extends Fragment {
                     }
                     for (int i = 0; i < object_list.length(); i++) {
                         JSONObject campo = object_list.getJSONObject(i);
-                        String first_name = campo.getString("first_name");
+                        String first_name = campo.getString("nombre");
                         int id = campo.getInt("id");
                         String imagen = campo.getString("imagen");
                         String last_name = campo.getString("last_name");

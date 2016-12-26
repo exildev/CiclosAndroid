@@ -114,10 +114,8 @@ public class ClienteFragment extends Fragment {
 
                 Cliente cliente = itemList.get(position);
                 if (cliente != null) {
-                    holder.title.setText(cliente.getFirst_name());
-                    if (cliente.isTipo() == Cliente.ES_PROPIETARIO) {
-                        holder.subtitle.setText(R.string.tipo_propietario);
-                    }
+                    holder.title.setText(cliente.getName());
+                    holder.subtitle.setText(cliente.getAddress());
                 }
 
                 return convertView;
@@ -161,50 +159,51 @@ public class ClienteFragment extends Fragment {
         infiniteListView.startLoading();
         String serviceUrl = getString(R.string.get_clientes, page, search);
         String url = getString(R.string.url, serviceUrl);
-        JsonObjectRequest clientesRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                try {
-                    infiniteListView.stopLoading();
-                    JSONArray object_list = response.getJSONArray("object_list");
-                    int count = response.getInt("count");
-                    if (response.has("next")) {
-                        page = response.getInt("next");
-                    }
-                    for (int i = 0; i < object_list.length(); i++) {
-                        JSONObject campo = object_list.getJSONObject(i);
-                        String first_name = campo.getString("nombre");
-                        int id = campo.getInt("id");
-                        String imagen = campo.getString("imagen");
-                        String last_name = campo.getString("last_name");
-                        boolean tipo = campo.getBoolean("tipo");
-                        infiniteListView.addNewItem(new Cliente(first_name, id, imagen, last_name, tipo));
-                    }
-                    if (itemList.size() == count) {
-                        infiniteListView.hasMore(false);
-                    } else {
-                        infiniteListView.hasMore(true);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                infiniteListView.stopLoading();
-                View main = getView();
-                assert main != null;
-                CardView container = (CardView) main.findViewById(R.id.error_container);
-                VolleySingleton.manageError(getContext(), error, container, new View.OnClickListener() {
+        JsonObjectRequest clientesRequest =
+                new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                     @Override
-                    public void onClick(View view) {
-                        Log.i("rety", "rety");
+                    public void onResponse(JSONObject response) {
+                        try {
+                            infiniteListView.stopLoading();
+                            JSONArray object_list = response.getJSONArray("object_list");
+                            int count = response.getInt("count");
+                            if (response.has("next")) {
+                                page = response.getInt("next");
+                            }
+                            for (int i = 0; i < object_list.length(); i++) {
+                                JSONObject campo = object_list.getJSONObject(i);
+                                int id = campo.getInt("id");
+                                int number = campo.getInt("numero");
+                                String name = campo.getString("nombre");
+                                String address = campo.getString("direccion");
+                                infiniteListView.addNewItem(
+                                        new Cliente(name, id, null, null, number, address));
+                            }
+                            if (itemList.size() == count) {
+                                infiniteListView.hasMore(false);
+                            } else {
+                                infiniteListView.hasMore(true);
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        infiniteListView.stopLoading();
+                        View main = getView();
+                        assert main != null;
+                        CardView container = (CardView) main.findViewById(R.id.error_container);
+                        VolleySingleton.manageError(getContext(), error, container, new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Log.i("rety", "rety");
+                            }
+                        });
+                        Log.e("Activities", error.toString());
                     }
                 });
-                Log.e("Activities", error.toString());
-            }
-        });
         VolleySingleton.getInstance(this.getActivity()).addToRequestQueue(clientesRequest);
     }
 
@@ -238,7 +237,7 @@ public class ClienteFragment extends Fragment {
     }
 
     void launchCliente(int id) {
-        Intent intent = new Intent(this.getContext(), ProfileActivity.class);
+        Intent intent = new Intent(this.getContext(), ListCampaniaActivity.class);
         intent.putExtra("id", id);
         startActivity(intent);
     }

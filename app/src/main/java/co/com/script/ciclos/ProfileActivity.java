@@ -77,11 +77,11 @@ public class ProfileActivity extends AppCompatActivity {
         mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                if(newState == BottomSheetBehavior.STATE_COLLAPSED){
+                if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
                     hideSheetShadow();
-                }else if(newState == BottomSheetBehavior.STATE_EXPANDED){
+                } else if (newState == BottomSheetBehavior.STATE_EXPANDED) {
                     View sheet_modal = findViewById(R.id.modal_sheet);
-                    if(sheet_modal.getVisibility() == View.GONE){
+                    if (sheet_modal.getVisibility() == View.GONE) {
                         showSheetShadow();
                     }
                 }
@@ -97,9 +97,9 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void onBackPressed() {
-        if(mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED){
+        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
             mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        }else{
+        } else {
             super.onBackPressed();
         }
     }
@@ -123,7 +123,7 @@ public class ProfileActivity extends AppCompatActivity {
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.nav_history){
+                if (item.getItemId() == R.id.nav_history) {
                     Intent intent = new Intent(ProfileActivity.this, ListReporteActivity.class);
                     intent.putExtras(getIntent());
                     startActivity(intent);
@@ -133,7 +133,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
     }
 
-    public void openSheet(){
+    public void openSheet() {
         final View sheet_modal = findViewById(R.id.modal_sheet);
         sheet_modal.setVisibility(View.VISIBLE);
 
@@ -146,7 +146,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
                 sheet_modal.setBackgroundColor((int) animator.getAnimatedValue());
-                if((int) animator.getAnimatedValue() == colorTo){
+                if ((int) animator.getAnimatedValue() == colorTo) {
                     mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
             }
@@ -155,17 +155,17 @@ public class ProfileActivity extends AppCompatActivity {
         colorAnimation.start();
     }
 
-    public void closeSheet(View view){
+    public void closeSheet(View view) {
         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
     }
 
-    public void showSheetShadow(){
+    public void showSheetShadow() {
         final View sheet_modal = findViewById(R.id.modal_sheet);
         sheet_modal.setVisibility(View.VISIBLE);
         sheet_modal.setBackgroundColor(ContextCompat.getColor(this, R.color.colorShadow));
     }
 
-    void hideSheetShadow(){
+    void hideSheetShadow() {
         final View sheet_modal = findViewById(R.id.modal_sheet);
         sheet_modal.setVisibility(View.VISIBLE);
 
@@ -178,7 +178,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
                 sheet_modal.setBackgroundColor((int) animator.getAnimatedValue());
-                if ((int) animator.getAnimatedValue() == colorTo){
+                if ((int) animator.getAnimatedValue() == colorTo) {
                     sheet_modal.setVisibility(View.GONE);
                 }
             }
@@ -214,7 +214,7 @@ public class ProfileActivity extends AppCompatActivity {
                 if (error.networkResponse == null) {
                     Toast.makeText(ProfileActivity.this, R.string.no_network, Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(ProfileActivity.this, "El cliente no existe", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivity.this, getString(R.string.shop_not_found), Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -235,9 +235,9 @@ public class ProfileActivity extends AppCompatActivity {
             this.name = first_name;
             name.setText(first_name);
             emailtv.setText(email);
-            if (telefono == null || telefono.equals("") || telefono.equals("null")){
+            if (telefono == null || telefono.equals("") || telefono.equals("null")) {
                 phone.setVisibility(View.GONE);
-            }else{
+            } else {
                 phone.setText(telefono);
             }
 
@@ -280,7 +280,7 @@ public class ProfileActivity extends AppCompatActivity {
                 for (int i = 0; i < piscinas.length(); i++) {
                     JSONObject piscina = piscinas.getJSONObject(i);
                     int id = piscina.getInt("id");
-                    String nombre= piscina.getString("nombre");
+                    String nombre = piscina.getString("nombre");
                     double ancho = piscina.getDouble("ancho");
                     double largo = piscina.getDouble("largo");
                     double profundidad = piscina.getDouble("profundidad");
@@ -304,7 +304,7 @@ public class ProfileActivity extends AppCompatActivity {
             } else {
                 for (int i = 0; i < casas.length(); i++) {
                     JSONObject casa = casas.getJSONObject(i);
-                    String direccion= casa.getString("direccion");
+                    String direccion = casa.getString("direccion");
                     String latitud = casa.getString("latitud");
                     String longitud = casa.getString("longitud");
 
@@ -322,7 +322,7 @@ public class ProfileActivity extends AppCompatActivity {
         findViewById(R.id.fab).setVisibility(View.GONE);
         final CardView loading = (CardView) findViewById(R.id.loading);
         loading.setVisibility(View.VISIBLE);
-        View modal =  findViewById(R.id.modal);
+        View modal = findViewById(R.id.modal);
         modal.setVisibility(View.VISIBLE);
 
         final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
@@ -360,7 +360,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         final CardView loading = (CardView) findViewById(R.id.loading);
         loading.setVisibility(View.VISIBLE);
-        View modal =  findViewById(R.id.modal);
+        View modal = findViewById(R.id.modal);
         modal.setVisibility(View.GONE);
 
         final float scale = getApplicationContext().getResources().getDisplayMetrics().density;
@@ -410,7 +410,7 @@ public class ProfileActivity extends AppCompatActivity {
         contactoRV.swapAdapter(cAdapter, false);
     }
 
-    public void setPiscinasRV(){
+    public void setPiscinasRV() {
         piscinaRV = (RecyclerView) findViewById(R.id.piscina_rv);
         piscinaRV.setHasFixedSize(true);
         piscinaRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
@@ -428,7 +428,7 @@ public class ProfileActivity extends AppCompatActivity {
         piscinaRV.swapAdapter(pAdapter, false);
     }
 
-    public void launchCliente(View view){
+    public void launchCliente(View view) {
         Intent intent = new Intent(this, ReporteActivity.class);
         intent.putExtra("piscinas", pJSON);
         intent.putExtra("name", name);

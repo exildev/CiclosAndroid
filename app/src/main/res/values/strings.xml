@@ -227,4 +227,12 @@
     <string name="historial_de_soluciones">Historial de soluciones</string>
     <string name="reportes_informativos">Reportes informativos</string>
     <string name="title_activity_list_campania">ListCampaniaActivity</string>
+    <string name="menu_item_gps">GPS</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="search">Search</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="enviar">Enviar</string>
+    <string name="historial_de_reporte">Historial de reporte</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 </resources>

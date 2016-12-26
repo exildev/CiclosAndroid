@@ -5,15 +5,15 @@
     <item
         android:id="@+id/action_search"
         android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="ifRoom"
+        android:title="@string/search"
         android:visible="false"
         app:actionViewClass="android.support.v7.widget.SearchView"
-        android:title="Search"/>
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_notificaciones"
         android:icon="@drawable/ic_notification_24dp"
-        app:showAsAction="ifRoom"
+        android:title="@string/notificaciones"
         android:visible="false"
-        android:title="Notificaciones" />
+        app:showAsAction="ifRoom" />
 </menu>

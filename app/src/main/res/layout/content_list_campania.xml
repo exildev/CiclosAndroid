@@ -21,4 +21,5 @@
         app:dividerVisible="true"
         app:scrollbarVisible="true"
         app:swipeRefreshIndicatorColor="@color/colorAccent" />
+
 </RelativeLayout>

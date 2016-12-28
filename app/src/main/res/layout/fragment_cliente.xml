@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClienteFragment">
+    tools:context=".ShopFragment">
 
     <android.support.v7.widget.CardView
         android:id="@+id/error_container"
@@ -20,12 +20,12 @@
         app:dividerVisible="true"
         app:scrollbarVisible="true"
         app:swipeRefreshIndicatorColor="@color/colorAccent" />
-    <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/qr_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         app:srcCompat="@drawable/ic_crop_free"
-        android:layout_margin="@dimen/fab_margin"/>
+        android:layout_margin="@dimen/fab_margin"/>-->
 </RelativeLayout>

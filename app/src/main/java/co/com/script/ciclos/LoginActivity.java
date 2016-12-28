@@ -33,18 +33,18 @@ public class LoginActivity extends AppCompatActivity {
         autoSession();
     }
 
-    private void autoSession(){
+    private void autoSession() {
         User user = User.get(this);
-        if(user != null){
+        if (user != null) {
             login(user.getUsername(), user.getPassword(), user.isPiscinero());
         }
     }
 
-    public void login(View view){
+    public void login(View view) {
         TextInputEditText username = (TextInputEditText) findViewById(R.id.username);
         TextInputEditText password = (TextInputEditText) findViewById(R.id.password);
-        RadioButton piscinero = (RadioButton) findViewById(R.id.piscinero);
-        login(username.getText().toString(), password.getText().toString(), piscinero.isChecked());
+        //RadioButton piscinero = (RadioButton) findViewById(R.id.piscinero);
+        login(username.getText().toString(), password.getText().toString(), false);
     }
 
     public void login(final String username, final String password, final boolean piscinero) {
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
                             });
                         }
                     }
-                }){
+                }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -107,24 +107,24 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoading() {
         final TextInputLayout username = (TextInputLayout) findViewById(R.id.username_container);
         final TextInputLayout password = (TextInputLayout) findViewById(R.id.password_container);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        //RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         Button send = (Button) findViewById(R.id.send_button);
         username.setVisibility(View.GONE);
         password.setVisibility(View.GONE);
         send.setVisibility(View.GONE);
-        radioGroup.setVisibility(View.GONE);
+        //radioGroup.setVisibility(View.GONE);
         findViewById(R.id.progress).setVisibility(View.VISIBLE);
     }
 
-    private void returnToLogin(){
+    private void returnToLogin() {
         TextInputLayout username = (TextInputLayout) findViewById(R.id.username_container);
         TextInputLayout password = (TextInputLayout) findViewById(R.id.password_container);
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        //RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         findViewById(R.id.progress).setVisibility(View.INVISIBLE);
         Button send = (Button) findViewById(R.id.send_button);
         username.setVisibility(View.VISIBLE);
         password.setVisibility(View.VISIBLE);
         send.setVisibility(View.VISIBLE);
-        radioGroup.setVisibility(View.VISIBLE);
+        //radioGroup.setVisibility(View.VISIBLE);
     }
 }

@@ -5,6 +5,7 @@
     <string name="login_piscinero">/usuarios/login/piscinero/</string>
     <string name="login_supervisor">/usuarios/login/supervisor/</string>
     <string name="get_cliente">/usuarios/single/cliente/%1$d/</string>
+    <string name="get_campanias">/usuarios/service/list/campana/?id=%1$d</string>
     <string name="get_clientes">/usuarios/service/list/tienda/?page=%1$d&amp;search=%2$s</string>
     <string name="planillas_pendientes">/actividades/planilladiaria/pendiente/list/?page=%1$d</string>
     <string name="asignaciones">/usuarios/service/list/asignaciones/?asigna=True&amp;page=%1$d</string>

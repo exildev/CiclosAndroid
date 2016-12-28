@@ -5,5 +5,5 @@
         android:id="@+id/nav_history"
         android:icon="@drawable/ic_history_24dp"
         app:showAsAction="always"
-        android:title="Historial de reporte" />
+        android:title="@string/historial_de_reporte" />
 </menu>

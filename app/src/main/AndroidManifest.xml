@@ -19,7 +19,7 @@
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation" />
         <activity
-            android:name="co.com.script.ciclos.LoginActivity"
+            android:name=".LoginActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,58 +28,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="co.com.script.ciclos.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.ProfileActivity"
+            android:name=".ProfileActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.ReporteActivity"
+            android:name=".ReporteActivity"
             android:label="@string/title_activity_reporte"
             android:theme="@style/ReportTheme" />
         <activity
-            android:name="co.com.script.ciclos.ListReporteActivity"
+            android:name=".ListReporteActivity"
             android:label="@string/title_activity_list_reporte"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.GalleryActivity"
+            android:name=".GalleryActivity"
             android:label="@string/title_activity_gallery"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.RutaActivity"
+            android:name=".RutaActivity"
             android:label="@string/title_activity_ruta"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.PlanillaActivity"
+            android:name=".PlanillaActivity"
             android:label="@string/title_activity_planilla"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.ChatActivity"
+            android:name=".ChatActivity"
             android:configChanges="keyboardHidden"
             android:label="@string/title_activity_chat"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="co.com.script.ciclos.ScrollingActivity"
+            android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.CalendarActivity"
+            android:name=".CalendarActivity"
             android:label="@string/title_activity_calendar"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.AboutActivity"
+            android:name=".AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.PiscinasActivity"
+            android:name=".PiscinasActivity"
             android:label="@string/title_activity_piscinas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.RutaPActivity"
+            android:name=".RutaPActivity"
             android:label="@string/title_activity_ruta_p"
             android:theme="@style/AppTheme.NoActionBar" />
         <!--
@@ -95,26 +95,29 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="co.com.script.ciclos.MapRutaActivity"
+            android:name=".MapRutaActivity"
             android:label="@string/title_activity_map_ruta"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.NotificationActivity"
+            android:name=".NotificationActivity"
             android:label="@string/title_activity_notification"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.AlarmActivity"
+            android:name=".AlarmActivity"
             android:label="@string/title_activity_alarm"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="co.com.script.ciclos.MapCasaActivity"
+            android:name=".MapCasaActivity"
             android:label="@string/title_activity_map_casa"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name="com.liuguangqiang.ipicker.IPickerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ListCampaniaActivity"
+            android:label="@string/title_activity_list_campania"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

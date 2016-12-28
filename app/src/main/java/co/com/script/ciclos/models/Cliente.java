@@ -1,34 +1,37 @@
 package co.com.script.ciclos.models;
 
 
-
 public class Cliente {
 
     public static final boolean ES_PROPIETARIO = true;
 
-    private String first_name;
+    private String name;
     private int id;
-    private String imagen;
-    private String last_name;
-    private boolean tipo;
+    private Float latitude;
+    private Float longitude;
+    private int number;
+    private String address;
 
-    public Cliente(String first_name, int id, String imagen, String last_name, boolean tipo) {
-        this.first_name = first_name;
+    public Cliente(String name, int id, Float latitude, Float longitude, int number, String address) {
+        this.name = name;
         this.id = id;
-        this.imagen = imagen;
-        this.last_name = last_name;
-        this.tipo = tipo;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.number = number;
+        this.address = address;
     }
 
-    public Cliente() {
+    public Cliente(String name) {
+
+        this.name = name;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getName() {
+        return name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {
@@ -39,27 +42,35 @@ public class Cliente {
         this.id = id;
     }
 
-    public String getImagen() {
-        return imagen;
+    public Float getLatitude() {
+        return latitude;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setLatitude(Float latitude) {
+        this.latitude = latitude;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public Float getLongitude() {
+        return longitude;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLongitude(Float longitude) {
+        this.longitude = longitude;
     }
 
-    public boolean isTipo() {
-        return tipo;
+    public int getNumber() {
+        return number;
     }
 
-    public void setTipo(boolean tipo) {
-        this.tipo = tipo;
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

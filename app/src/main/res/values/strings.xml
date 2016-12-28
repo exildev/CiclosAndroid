@@ -199,6 +199,8 @@
     <string name="nav_piscineros">Piscineros</string>
     <string name="piscinas">Piscinas</string>
     <string name="title_activity_piscinas">Asignacion de piscinas</string>
+    <string name="shop_not_found">La tienda no ha sido encontrada</string>
+    <string name="campanias_not_found">No se encontraron campañas</string>
 
     <string name="piscina_title">Piscina %1$s, Tipo %2$s</string>
     <string name="piscina_medidas">%1$.1fm ancho, %2$.1fm largo, %3$.1fm alto</string>
@@ -224,4 +226,13 @@
     <string name="historial_de_reportes">Historial de reportes</string>
     <string name="historial_de_soluciones">Historial de soluciones</string>
     <string name="reportes_informativos">Reportes informativos</string>
+    <string name="title_activity_list_campania">ListCampaniaActivity</string>
+    <string name="menu_item_gps">GPS</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="search">Search</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="enviar">Enviar</string>
+    <string name="historial_de_reporte">Historial de reporte</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 </resources>

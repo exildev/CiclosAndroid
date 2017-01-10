@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_shops"
+            android:icon="@drawable/ic_store"
+            android:title="@string/shops" />
+        <item
+            android:id="@+id/nav_recordatorio"
+            android:icon="@drawable/ic_alarm_24dp"
+            android:title="@string/recordatorios" />
+        <item
+            android:id="@+id/nav_rutas"
+            android:icon="@drawable/ic_direction"
+            android:title="@string/rutas" />
+        <item
+            android:id="@+id/nav_actividades"
+            android:icon="@drawable/ic_event"
+            android:title="@string/actividades" />
+        <item
+            android:id="@+id/nav_reportes"
+            android:icon="@drawable/ic_report"
+            android:title="@string/historial_de_reportes" />
+        <item
+            android:id="@+id/nav_soluciones"
+            android:icon="@drawable/ic_build"
+            android:title="@string/historial_de_soluciones" />
+        <item
+            android:id="@+id/nav_informativos"
+            android:icon="@drawable/ic_info"
+            android:title="@string/reportes_informativos" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline"
+            android:title="@string/acerca_de" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="@string/cerrar_sesi_n" />
+    </group>
+
+</menu>

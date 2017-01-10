@@ -92,24 +92,6 @@ public class ListCampaniaActivity extends AppCompatActivity
         mGoogleClient.connect();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_campania, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_gps:
-                startLocationUpdates();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
     void setInfiniteList() {
         infiniteListView = (InfiniteListView) findViewById(R.id.infiniteListCampania);
 

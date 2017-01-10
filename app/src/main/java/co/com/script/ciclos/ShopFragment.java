@@ -35,21 +35,21 @@ import co.com.script.ciclos.models.Cliente;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ClienteFragment extends Fragment {
+public class ShopFragment extends Fragment {
     private int page;
     private String search = "";
     private ArrayList<Cliente> itemList;
     private InfiniteListView infiniteListView;
     private SearchView searchView;
 
-    public ClienteFragment() {
+    public ShopFragment() {
         // Required empty public constructor
         page = 1;
     }
 
-    public static ClienteFragment ClienteFragmentInstance(SearchView searchView) {
+    public static ShopFragment ShopFragmentInstance(SearchView searchView) {
         // Required empty public constructor
-        ClienteFragment f = new ClienteFragment();
+        ShopFragment f = new ShopFragment();
         f.searchView = searchView;
         return f;
     }
@@ -61,7 +61,7 @@ public class ClienteFragment extends Fragment {
         View fragment = inflater.inflate(R.layout.fragment_cliente, container, false);
         setInfiniteList(fragment);
         setSearchView();
-        setFab(fragment);
+        //setFab(fragment);
         return fragment;
     }
 
@@ -126,7 +126,7 @@ public class ClienteFragment extends Fragment {
         getClientes();
     }
 
-    void setFab(View fragment) {
+   /* void setFab(View fragment) {
         FloatingActionButton fab = (FloatingActionButton) fragment.findViewById(R.id.qr_fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,7 +134,7 @@ public class ClienteFragment extends Fragment {
                 initScan();
             }
         });
-    }
+    }*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

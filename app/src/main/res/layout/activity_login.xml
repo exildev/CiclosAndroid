@@ -71,7 +71,7 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <RadioGroup
+        <!--<RadioGroup
             android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
                 android:text="@string/supervisor" />
-        </RadioGroup>
+        </RadioGroup>-->
 
         <Button
             android:id="@+id/send_button"
@@ -112,6 +112,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        app:cardElevation="0dp"
-        app:cardCornerRadius="0dp" />
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp" />
 </RelativeLayout>

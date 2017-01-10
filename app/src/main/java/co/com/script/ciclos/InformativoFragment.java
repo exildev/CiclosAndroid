@@ -275,7 +275,8 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
                 .progress(true, 0)
                 .show();
 
-        String url = "http://104.236.33.228:8050/reportes/reporte/informativo/form/";
+        String url = getContext().getString(R.string.url_simple)
+                + "/reportes/reporte/informativo/form/";
         StringRequest loginRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
@@ -299,7 +300,7 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
                             Log.e("solucion", new String(error.networkResponse.data));
                         }
                     }
-                }){
+                }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -316,7 +317,8 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
 
     void getReportes() {
         infiniteListView.startLoading();
-        String url = "http://104.236.33.228:8050/reportes/reporte/informativo/list/?page=" + page + "&search=" + search;
+        String url = getContext().getString(R.string.url_simple)
+                + "/reportes/reporte/informativo/list/?page=" + page + "&search=" + search;
         JsonObjectRequest reportesRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -486,16 +488,16 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
         notix.visitMessages(messages);
     }
 
-    private void validPermissions(){
+    private void validPermissions() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (getActivity().checkSelfPermission(android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
-            }else if (getActivity().checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            } else if (getActivity().checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
-            }else {
+            } else {
                 createLocationRequest();
             }
-        }else {
+        } else {
             createLocationRequest();
         }
     }
@@ -576,8 +578,7 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // Now user should be able to use camera
                 validPermissions();
-            }
-            else {
+            } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(this.getContext());
                 builder.setMessage(R.string.gps_permissions_message)
                         .setCancelable(false)

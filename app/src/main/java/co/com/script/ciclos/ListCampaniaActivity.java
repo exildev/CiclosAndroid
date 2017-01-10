@@ -72,6 +72,9 @@ public class ListCampaniaActivity extends AppCompatActivity
     private LocationRequest mLocationRequest;
     private Location myLocation;
 
+    private String pJSON;
+    private String name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,18 +143,18 @@ public class ListCampaniaActivity extends AppCompatActivity
             @Override
             public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
-                ClienteFragment.ViewHolder holder;
+                ShopFragment.ViewHolder holder;
 
                 if (convertView == null) {
                     convertView = getLayoutInflater().inflate(R.layout.cliente, parent, false);
-                    holder = new ClienteFragment.ViewHolder();
+                    holder = new ShopFragment.ViewHolder();
                     holder.title = (TextView) convertView.findViewById(R.id.cliente);
                     holder.subtitle = (TextView) convertView.findViewById(R.id.cliente_subtitle);
 
                     convertView.setTag(holder);
 
                 } else {
-                    holder = (ClienteFragment.ViewHolder) convertView.getTag();
+                    holder = (ShopFragment.ViewHolder) convertView.getTag();
                 }
 
                 Campania cliente = itemList.get(position);
@@ -181,10 +184,11 @@ public class ListCampaniaActivity extends AppCompatActivity
                         try {
                             infiniteListView.stopLoading();
                             JSONArray object_list = response.getJSONArray("object_list");
+                            pJSON = object_list.toString();
                             int count = response.getInt("count");
-                            if (response.has("next")) {
+                            if (response.has("next"))
                                 page = response.getInt("next");
-                            }
+
                             for (int i = 0; i < object_list.length(); i++) {
                                 JSONObject campo = object_list.getJSONObject(i);
                                 int id = campo.getInt("id");
@@ -299,7 +303,7 @@ public class ListCampaniaActivity extends AppCompatActivity
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-
+        createLocationRequest();
     }
 
     @Override
@@ -340,7 +344,7 @@ public class ListCampaniaActivity extends AppCompatActivity
                                         .replace(R.id.main_frame, fragment)
                                         .commit();
                                 Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                                toolbar.setTitle("Piscix");
+                                toolbar.setTitle(getString(R.string.app_name));
                             }
                         });
                 AlertDialog alert = builder.create();
@@ -348,5 +352,13 @@ public class ListCampaniaActivity extends AppCompatActivity
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public void launchCliente(View view) {
+        Intent intent = new Intent(this, ReporteActivity.class);
+        intent.putExtra("piscinas", pJSON);
+        intent.putExtra("name", name);
+        intent.putExtras(getIntent());
+        startActivity(intent);
     }
 }

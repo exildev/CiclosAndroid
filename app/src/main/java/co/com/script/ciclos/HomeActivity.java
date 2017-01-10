@@ -206,11 +206,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public void menuSelected(int id) {
         inHome = false;
 
-        if (id == R.id.nav_clientes || id == R.id.clientes_btn) {
+        if (id == R.id.nav_shops || id == R.id.shops_btn) {
             MenuItem myActionMenuItem = mMenu.findItem(R.id.action_search);
             myActionMenuItem.setVisible(true);
             SearchView searchView = (SearchView) myActionMenuItem.getActionView();
-            Fragment fragment = ClienteFragment.ClienteFragmentInstance(searchView);
+            Fragment fragment = ShopFragment.ShopFragmentInstance(searchView);
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.main_frame, fragment)

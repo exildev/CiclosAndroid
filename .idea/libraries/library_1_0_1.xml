@@ -5,6 +5,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.liuguangqiang.ipicker/library/1.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liuguangqiang.ipicker/library/1.0.1/b1aa7fa8a11f09f346da5732804ef3ede38c06e9/library-1.0.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

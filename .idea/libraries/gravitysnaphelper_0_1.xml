@@ -5,6 +5,8 @@
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.rubensousa/gravitysnaphelper/0.1/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rubensousa/gravitysnaphelper/0.1/1cb0f630d1b156f2cdbf180780cd425adfa4b25c/gravitysnaphelper-0.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -50,7 +50,7 @@ public class GalleryActivity extends AppCompatActivity {
                 findViewById(R.id.loading).setVisibility(View.GONE);
                 try {
                     JSONArray object_list = response.getJSONArray("object_list");
-                    if (object_list.length() == 0){
+                    if (object_list.length() == 0) {
                         noPhotos();
                         return;
                     }
@@ -85,8 +85,8 @@ public class GalleryActivity extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(reportesRequest);
     }
 
-    void setImageGallery(String[] urlArray){
-        final String urlBase = "http://104.236.33.228:8050/media/";
+    void setImageGallery(String[] urlArray) {
+        final String urlBase = getString(R.string.url_simple) + "/media/";
         SimpleViewPager simpleViewPager = (SimpleViewPager) findViewById(R.id.simple_view_pager);
         simpleViewPager.setVisibility(View.VISIBLE);
         simpleViewPager.setImageUrls(urlArray, new ImageURLLoader() {
@@ -104,7 +104,8 @@ public class GalleryActivity extends AppCompatActivity {
         int selectedIndicatorColor = ContextCompat.getColor(this, R.color.colorPrimary);
         simpleViewPager.showIndicator(indicatorColor, selectedIndicatorColor);
     }
-    void noPhotos(){
+
+    void noPhotos() {
         findViewById(R.id.no_photos).setVisibility(View.VISIBLE);
     }
 }

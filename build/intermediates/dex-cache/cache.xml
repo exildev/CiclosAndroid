@@ -21,6 +21,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a62efbc51a663409a77fbf32b2a773447549fdd">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a88981e2f23506e9d83e9ae3479640bb4a9bb77a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.liuguangqiang.permissionhelper/permissionhelper/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_9f131628b6c2ad575a222374763a663f82e506bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rubensousa/gravitysnaphelper/0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -72,6 +90,33 @@
         revision="25.0.2"
         sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_4662fec2e8fe508292ab875c545a8a7466805e4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_428e3fc7912591983163103f4cfa43a1a726e222/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.ugurcany/InfiniteListView/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7c5e03ee5e4f0ed43bcf60640fe96e6ea8abb209">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ugurcany-InfiniteListView-1.1.0_d465697849cf7a90b549cbe721ed8e7f7435eb7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_a52bfe6704fb0d2317874e400f437494ec1e4b0e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,6 +192,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d3f8ab57967a9149262ad36a46477fc2515f6ac8">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad.material-dialogs-core-0.9.0.2_87f12c2b88280606b8f11ebb39a59da5861d6817/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -174,6 +228,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.ganfra/material-spinner/1.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ganfra-material-spinner-1.1.1_9ffd9c29766fdb4fb5c1c0c5a58074c559263f16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.jd-alexander/library/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.jd-alexander-library-1.1.0_8f0d0b7cd2b5faa6a9327db9da68205740d9eed8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -189,6 +261,24 @@
         revision="25.0.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_0c2945a2df5c80018c752eefa359a0cda759b76f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_60ca5ae5ae27489804dc3f4bdc5e9ebcb3db7131/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_ddd22fecbcb379ef80860c0db3fba8d19a88b05d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,12 +318,75 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.1.0_20c53c3d9a40a32506b55478303a561106071abc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.0_352185cf1a8ea9a67fd13f404b3e45f2d76801b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_fa524061db29cc2fc1e00c7c87572ff9e9c08bbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_815b1d2d021095168a0072ccd09fc3097e8b4ad1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_c645800363280733de88a230ae98f0acd0134012/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_520b02aaa3f266ded5f66850454671b32cd73a00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/engine.io-client/0.3.1/3ca9d0d53a27ecb88538ed874be417cfa827db5d/engine.io-client-0.3.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3ca9d0d53a27ecb88538ed874be417cfa827db5d">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-0.3.1_f515ba6dd179c42d347e336a979b9f060d758f68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rubensousa/gravitysnaphelper/0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-gravitysnaphelper-0.1_f2212e4f6d2069ed3d9c072c0153398c3b898362/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -246,12 +399,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_13c3fb1e9226de26355361285783b66792a1e690/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5090ae2a18d7656606a6b70822b137cfce585574">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edbbe4e3da854c8be9051f91e81518a419a81d80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f3cfc2d0646f233308341ab5718bac6ad542cc65">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_84511b978f9535caf4197c254b4f70a8f69c0955/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.journeyapps-zxing-android-embedded-3.0.2_9b8211d13a75002b3fcf771b1cf7eb1b4d6a2d7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9abf11d546d9e0ee82da86df608ced7a961b76ac">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-25.0.1_95f56eaaf660a7cd40eb811d0e6be4e30e6aa402/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -273,12 +462,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_56bdee19993c98dd9e0085a1cfd48d3959962a14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_117af808a783b99434ca3c70b4a7914a50dd6e6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_3d311219a7c26b9b6c64d7161d0151af18201723/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.fiskurgit/SimpleViewPager/1.0.10/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aa53f45cdc271b9059adcc5292eba380d22ff859">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.fiskurgit-SimpleViewPager-1.0.10_dbf42c3cfb62ba4399782f13c4c02879cdae3d38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/3.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="50edbe486cc0c5b0be647296124320e626157b3b">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.wdullaer-materialdatetimepicker-3.0.0_105ae4776a6894f69051642da5396c4587e87ed2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -297,6 +522,15 @@
         revision="25.0.2"
         sha1="7f2420506110902f033406b25697cf97ee8c38b2">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.1.0_23b0fc89e20ef494f9e7ce4063c068395f8c922d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.tarek360/Animated-Icons/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f9838c3e5abd04ff5519823a3fa321192b9b300c">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.tarek360-Animated-Icons-1.0.1_d715f33b9e4cf9bd6cec46eb300ba734d8f7e79e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -327,6 +561,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_8792d89811dce5675bc4037c78eb3f483e3d1276/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rubensousa/floatingtoolbar/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2ed5b1c1a204e927a610e21bc17daebe912824">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-floatingtoolbar-1.2.1_407ad514d3061158d304ffea8600353ed19608f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_9c69ad7197e1d2c556827e42b21d7ebfb3c4c32f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_ac7349bb1f1af6766a47059fd237357225fb3991/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -345,6 +615,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_6e4710fad15108853d7c648ab0d0cc3906a4e0e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rahatarmanahmed/circularprogressview/2.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rahatarmanahmed-circularprogressview-2.5.0_6c44fefbb2fc851f1b9f36879d677123ea32a8e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_d053d094865918e1f9baa240c72a5875d071219f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfb91ea7c6890336890ccb42767041af6b863e32">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_bbbb84fe0641687de7f28acebcb3ffe711955fcd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -360,6 +666,15 @@
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_e54fdabdb288007d5112dc47198701c89cf2fccd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_158322243206c8963c9dd6ebc9f0b84b55ca3772/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -390,12 +705,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/net.gotev/uploadservice/3.0.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="679035e7050e209cfa2bd29f08c20eecbec96063">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/net.gotev-uploadservice-3.0.3_fce8f7ffcac12517dacdddda4ce23c2695676d70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_1a16cb5dfc05a41d5ff70d807d55a2302d7458d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_502707a1917b419eb74a6075f180501eaa05ba67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_b166f64326636b701a6d80d7de8f792e9645a04f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.liuguangqiang.ipicker/library/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab2b6d009d54577e5b681b1c2d928dbb29576138">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.liuguangqiang.ipicker-library-1.0.1_cf5e4d023f38e992a6cb694e412ca940efaa5076/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -432,6 +783,15 @@
         revision="25.0.2"
         sha1="44a694d4095be84c2888764b1f7256b385c030ad">
         <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_c935252631b297a6003bc7a31f7e7a56286124aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.fiskurgit/SimpleViewPager/1.0.10/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa53f45cdc271b9059adcc5292eba380d22ff859">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.fiskurgit-SimpleViewPager-1.0.10_9539030e4b9def1dd699fb7b73bb1c1e68c9b2f6/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -226,7 +226,7 @@
     <string name="historial_de_reportes">Historial de reportes</string>
     <string name="historial_de_soluciones">Historial de soluciones</string>
     <string name="reportes_informativos">Reportes informativos</string>
-    <string name="title_activity_list_campania">ListCampaniaActivity</string>
+    <string name="title_activity_list_campania">Campañas</string>
     <string name="menu_item_gps">GPS</string>
     <string name="notificaciones">Notificaciones</string>
     <string name="search">Search</string>

@@ -320,13 +320,7 @@ public class ListCampaniaActivity extends AppCompatActivity
                         })
                         .setNegativeButton("Cerrar", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Fragment fragment = HomeFragment.newInstance(getIntent().getBooleanExtra("piscinero", false));
-                                FragmentManager fragmentManager = getSupportFragmentManager();
-                                fragmentManager.beginTransaction()
-                                        .replace(R.id.main_frame, fragment)
-                                        .commit();
-                                Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                                toolbar.setTitle(getString(R.string.app_name));
+                                finish();
                             }
                         });
                 AlertDialog alert = builder.create();

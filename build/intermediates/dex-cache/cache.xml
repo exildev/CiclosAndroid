@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7a62efbc51a663409a77fbf32b2a773447549fdd">
+        sha1="fa2a88b4cd76268b78bc61f0c8ad4b14ba089945">
         <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a88981e2f23506e9d83e9ae3479640bb4a9bb77a/classes.dex" />
     </item>
     <item
@@ -412,7 +412,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="5090ae2a18d7656606a6b70822b137cfce585574">
+        sha1="f94a3dec59ed6ab821f0ddce81f5fc0896c7fb95">
         <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edbbe4e3da854c8be9051f91e81518a419a81d80/classes.dex" />
     </item>
     <item

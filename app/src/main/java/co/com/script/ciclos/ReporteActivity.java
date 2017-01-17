@@ -284,7 +284,7 @@ public class ReporteActivity extends AppCompatActivity implements IPicker.OnSele
                             .addParameter("nombre", nombre)
                             .addParameter("descripcion", descripcion)
                             .addParameter("tipo_de_reporte", tipo_de_reporte)
-                            .addParameter("piscina", piscina)
+                            .addParameter("campana", piscina)
                             .addParameter("latitud", latitud)
                             .addParameter("longitud", longitud)
                             .addParameter("fotoreporte_set-TOTAL_FORMS", String.valueOf(images.size()))

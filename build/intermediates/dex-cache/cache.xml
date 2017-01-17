@@ -7,8 +7,94 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
+<<<<<<< HEAD
         sha1="9abf11d546d9e0ee82da86df608ced7a961b76ac">
         <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.0.1_52af0115d494cd75ad8828e84476e8831e522f5f\classes.dex" />
+=======
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_1126d625300736819552142b894eed59598a5e67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_180e34ae529f75a89491aa83b35bb81aacf61077/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa2a88b4cd76268b78bc61f0c8ad4b14ba089945">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a88981e2f23506e9d83e9ae3479640bb4a9bb77a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.liuguangqiang.permissionhelper/permissionhelper/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_9f131628b6c2ad575a222374763a663f82e506bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rubensousa/gravitysnaphelper/0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-gravitysnaphelper-0.1_fbe2bc023c1620c23649ee235325edd9cfe51e56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.liuguangqiang.permissionhelper/permissionhelper/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_6722c1b131a961dd688cf88d64e3d49e6688c0e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.jd-alexander/library/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.jd-alexander-library-1.1.0_8bd0e63857997e7235df29f56343ab82f7dc3f16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_5c9dc7b44079865d995bbf07ec116561274cabe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/.gradle/caches/modules-2/files-2.1/org.java-websocket/Java-WebSocket/1.3.0/db2658f013fb163de4a99274c2eb9e17efe535d2/Java-WebSocket-1.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/Java-WebSocket-1.3.0_ef28d6dda899abc529eae83c61a729d42537a4a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_4662fec2e8fe508292ab875c545a8a7466805e4e/classes.dex" />
+>>>>>>> develop
     </item>
     <item
         is-multidex="true"
@@ -305,7 +391,38 @@
         optimize="true"
         revision="25.0.2"
         sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
+<<<<<<< HEAD
         <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rubensousa-gravitysnaphelper-0.1_24d6ac8549b66847320d2553c3ab1c647b16fdc6\classes.dex" />
+=======
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-gravitysnaphelper-0.1_f2212e4f6d2069ed3d9c072c0153398c3b898362/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_acdeb8fec618a249e44c82f6281f391a9cfc81f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_13c3fb1e9226de26355361285783b66792a1e690/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f94a3dec59ed6ab821f0ddce81f5fc0896c7fb95">
+        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edbbe4e3da854c8be9051f91e81518a419a81d80/classes.dex" />
+>>>>>>> develop
     </item>
     <item
         is-multidex="true"

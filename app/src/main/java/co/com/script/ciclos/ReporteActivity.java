@@ -312,7 +312,7 @@ public class ReporteActivity extends AppCompatActivity implements IPicker.OnSele
                 @Override
                 public void onCompleted(UploadInfo uploadInfo, ServerResponse serverResponse) {
                     hideLoading();
-                    Intent intent = new Intent(ReporteActivity.this, ListReporteActivity.class);
+                    Intent intent = new Intent(ReporteActivity.this, ListCampaniaActivity.class);
                     intent.putExtra("send", true);
                     intent.putExtras(getIntent());
                     startActivity(intent);

@@ -124,7 +124,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 if (item.getItemId() == R.id.nav_history) {
-                    Intent intent = new Intent(ProfileActivity.this, ListReporteActivity.class);
+                    Intent intent = new Intent(ProfileActivity.this, ListCampaniaActivity.class);
                     intent.putExtras(getIntent());
                     startActivity(intent);
                 }

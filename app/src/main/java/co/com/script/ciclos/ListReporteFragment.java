@@ -284,17 +284,18 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
                     }
                     for (int i = 0; i < object_list.length(); i++) {
                         JSONObject campo = object_list.getJSONObject(i);
+                        Log.i("#####", campo.toString());
                         int id = campo.getInt("id");
                         String nombre = campo.getString("nombre");
                         String descripcion = campo.getString("descripcion");
                         String tipo_de_reporte = campo.getString("tipo_n");
-                        String piscina = campo.getString("piscina__nombre");
+                        String piscina = campo.getString("campana__nombre");
                         boolean estado = campo.getBoolean("estado");
                         String fecha = campo.getString("fecha");
-                        String cliente = campo.getString("nombreC") + " " + campo.getString("apellidosC");
+//                        String tienda = campo.getString("nombreC") + " " + campo.getString("apellidosC");
                         String numero = campo.getString("numero");
                         String cierre = Reporte.CIERRES[campo.getInt("cierre") - 1];
-                        infiniteListView.addNewItem(new Reporte(id, nombre, descripcion, tipo_de_reporte, piscina, estado, fecha, cliente, cierre, numero));
+                        infiniteListView.addNewItem(new Reporte(id, nombre, descripcion, tipo_de_reporte, piscina, estado, fecha, null, cierre, numero));
                     }
                     if (itemList.size() == count) {
                         infiniteListView.hasMore(false);

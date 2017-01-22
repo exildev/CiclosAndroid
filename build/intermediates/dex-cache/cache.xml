@@ -421,7 +421,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d00b506cb19b9338c0bb00cb8a9b1d44f3554180">
+        sha1="4c2d0b24741a73e310126ba0efd47f15571a5bcf">
         <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edbbe4e3da854c8be9051f91e81518a419a81d80/classes.dex" />
     </item>
     <item

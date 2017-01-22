@@ -1,14 +1,12 @@
 package co.com.script.ciclos.models;
 
-
-
 public class Reporte {
 
     int id;
     private String nombre;
     private String descripcion;
     private String tipo_de_reporte;
-    private String piscina;
+    private String campania;
     private boolean estado;
     private String fecha;
     private String cliente;
@@ -17,12 +15,14 @@ public class Reporte {
 
     public static final String[] CIERRES = {"Automático", "Parcial", "A satisfacción"};
 
-    public Reporte(int id, String nombre, String descripcion, String tipo_de_reporte, String piscina, boolean estado, String fecha, String cliente, String cierre, String numero) {
+    public Reporte(int id, String nombre, String descripcion, String tipo_de_reporte,
+                   String campania, boolean estado, String fecha, String cliente, String cierre,
+                   String numero) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.tipo_de_reporte = tipo_de_reporte;
-        this.piscina = piscina;
+        this.campania = campania;
         this.estado = estado;
         this.fecha = fecha;
         this.cliente = cliente;
@@ -46,8 +46,8 @@ public class Reporte {
         return tipo_de_reporte;
     }
 
-    public String getPiscina() {
-        return piscina;
+    public String getCampania() {
+        return campania;
     }
 
     public boolean isEstado() {

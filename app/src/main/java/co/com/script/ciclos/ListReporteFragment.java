@@ -193,7 +193,7 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
                     holder.cliente.setText(reporte.getCliente());
                     holder.descripcion.setText(reporte.getDescripcion());
                     holder.fecha.setText(reporte.getFecha());
-                    holder.piscina.setText(reporte.getPiscina());
+                    holder.piscina.setText(reporte.getCampania());
                     holder.tipo.setText(reporte.getTipo_de_reporte());
                     holder.subtitle.setText(reporte.getNombre());
                     if (reporte.getNumero().equals("") || reporte.getNumero().equals("null")){
@@ -284,7 +284,6 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
                     }
                     for (int i = 0; i < object_list.length(); i++) {
                         JSONObject campo = object_list.getJSONObject(i);
-                        Log.i("#####", campo.toString());
                         int id = campo.getInt("id");
                         String nombre = campo.getString("nombre");
                         String descripcion = campo.getString("descripcion");

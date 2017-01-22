@@ -119,7 +119,7 @@
     <string name="title_activity_calendar">Actividades</string>
     <string name="title_activity_about">Acerca de</string>
     <string name="icono">Icono</string>
-    <string name="actividad_title">Piscina C39, tipo T1</string>
+    <string name="actividad_title">Campaña C39, tipo T1</string>
     <string name="actividad_description">1m alto, 1m ancho, 1m largo</string>
     <string name="exile_soluciones">Exile Soluciones</string>
     <string name="date_format">10/10/2016</string>
@@ -131,7 +131,7 @@
     <string name="cliente_email">john.doe@mail.com</string>
     <string name="cliente_phone">318 393 0939</string>
     <string name="contacts_title">Contactos</string>
-    <string name="pools_title">Piscinas</string>
+    <string name="pools_title">Campañas</string>
     <string name="houses_title">Casas</string>
     <string name="secondary_text">Secondary text</string>
     <string name="two_line_item">Two-line-item</string>
@@ -164,7 +164,7 @@
     <string name="nav_soluciones">H. Soluciones</string>
     <string name="nav_informativos">R. Informativos</string>
     <string name="nav_actividades">Actividades</string>
-    <string name="pool_name_template">Piscina 1</string>
+    <string name="pool_name_template">Campaña 1</string>
     <string name="pool_state_template">Olimpica, En buen estado</string>
     <string name="largo">Largo</string>
     <string name="ancho">Ancho</string>
@@ -175,7 +175,7 @@
     <string name="shops">Tiendas</string>
     <string name="fecha_title">Fecha:</string>
     <string name="estado">Estado:</string>
-    <string name="piscina">Piscina:</string>
+    <string name="campania">Campaña:</string>
     <string name="piscineros">Piscineros</string>
     <string name="tipo">Tipo:</string>
     <string name="cierre">Cierre:</string>
@@ -188,8 +188,8 @@
     <string name="informativos">Informativos</string>
 
 
-    <string name="salida_planilla_nombre">Salida de piscina %1$s</string>
-    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la piscina %1$s del cliente %2$s %3$s</string>
+    <string name="salida_planilla_nombre">Salida de campaña %1$s</string>
+    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la campaña %1$s de la tienda %2$s %3$s</string>
 
     <string name="loadin_modal_title">Guardando cambios</string>
     <string name="loadin_modal_content">Por favor espere</string>
@@ -197,19 +197,19 @@
     <string name="piscinero">Piscinero</string>
     <string name="supervisor">Supervisor</string>
     <string name="nav_piscineros">Piscineros</string>
-    <string name="piscinas">Piscinas</string>
-    <string name="title_activity_piscinas">Asignacion de piscinas</string>
+    <string name="campanias">Campañas</string>
+    <string name="title_activity_campanias">Asignacion de campañas</string>
     <string name="shop_not_found">La tienda no ha sido encontrada</string>
     <string name="campanias_not_found">No se encontraron campañas</string>
 
-    <string name="piscina_title">Piscina %1$s, Tipo %2$s</string>
-    <string name="piscina_medidas">%1$.1fm ancho, %2$.1fm largo, %3$.1fm alto</string>
+    <string name="campania_title">Campaña %1$s, Tipo %2$s</string>
+    <string name="campania_medidas">%1$.1fm ancho, %2$.1fm largo, %3$.1fm alto</string>
     <string name="success_response">operación realizada con exito</string>
     <string name="title_activity_ruta_p">Ruta Piscinero</string>
     <string name="title_activity_map_ruta">Mapa de ruta</string>
     <string name="title_activity_notification">Notificaciones</string>
     <string name="title_activity_alarm">Recordatorios</string>
-    <string name="title_activity_map_casa">Ubicacion piscina</string>
+    <string name="title_activity_map_casa">Ubicacion campaña</string>
     <string name="buscar">Buscar aquí</string>
     <string name="error_response">Error al enviar los datos</string>
     <string name="gps_success">Ubicación registrada con exito</string>

@@ -84,9 +84,9 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> imple
         final int i = position;
         final Asignacion piscina = itemList.get(position);
 
-        itemViewHolder.title.setText(context.getString(R.string.piscina_title, piscina.getNombre(), piscina.getTipo()));
+        itemViewHolder.title.setText(context.getString(R.string.campania_title, piscina.getNombre(), piscina.getTipo()));
         itemViewHolder.cliente.setText(piscina.getCliente());
-        String medidas = context.getString(R.string.piscina_medidas, piscina.getAncho(), piscina.getLargo(), piscina.getProfundidad());
+        String medidas = context.getString(R.string.campania_medidas, piscina.getAncho(), piscina.getLargo(), piscina.getProfundidad());
         itemViewHolder.medidas.setText(piscina.getOrden() + " " + medidas);
         if (piscina.isHaveGPS()) {
             itemViewHolder.have_gps_card.setVisibility(View.VISIBLE);

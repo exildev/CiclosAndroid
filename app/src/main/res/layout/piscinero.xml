@@ -164,7 +164,7 @@
                         android:layout_weight="1"
                         android:drawablePadding="8dp"
                         android:drawableStart="@drawable/ic_pool_36dp"
-                        android:text="@string/piscinas"
+                        android:text="@string/campanias"
                         android:theme="@style/AppTheme.TealButton" />
                 </LinearLayout>
             </LinearLayout>

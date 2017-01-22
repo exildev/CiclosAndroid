@@ -72,7 +72,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PiscinasActivity"
-            android:label="@string/title_activity_piscinas"
+            android:label="@string/title_activity_campanias"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RutaPActivity"

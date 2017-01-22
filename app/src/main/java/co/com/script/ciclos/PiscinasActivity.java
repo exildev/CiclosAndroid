@@ -139,9 +139,9 @@ public class PiscinasActivity extends AppCompatActivity {
 
                 final PiscinaAsignacion piscina = itemList.get(position);
                 if (piscina != null) {
-                    holder.title.setText(getString(R.string.piscina_title, piscina.getNombre(), piscina.getTipo()));
+                    holder.title.setText(getString(R.string.campania_title, piscina.getNombre(), piscina.getTipo()));
                     holder.cliente.setText(piscina.getCliente());
-                    String medidas = getString(R.string.piscina_medidas, piscina.getAncho(), piscina.getLargo(), piscina.getProfundidad());
+                    String medidas = getString(R.string.campania_medidas, piscina.getAncho(), piscina.getLargo(), piscina.getProfundidad());
                     holder.medidas.setText(medidas);
                     holder.asignacion.setOnCheckedChangeListener(null);
                     holder.asignacion.setChecked(piscina.isAsignacion());

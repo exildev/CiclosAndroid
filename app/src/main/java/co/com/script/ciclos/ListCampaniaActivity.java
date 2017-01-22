@@ -24,6 +24,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -336,5 +337,22 @@ public class ListCampaniaActivity extends AppCompatActivity
         intent.putExtra("name", name);
         intent.putExtras(getIntent());
         startActivity(intent);
+    }
+
+    static class ViewHolder {
+        TextView nombre;
+        TextView subtitle;
+        TextView cliente;
+        TextView fecha;
+        TextView estado;
+        TextView piscina;
+        TextView tipo;
+        TextView cierre;
+        TextView descripcion;
+        TextView numero;
+        CardView icon;
+        Button chat_button;
+        Button solution_button;
+        Button photos_button;
     }
 }

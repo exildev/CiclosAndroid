@@ -160,11 +160,11 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
             @Override
             public View getView(final int position, View convertView, @NonNull ViewGroup parent) {
 
-                ListReporteActivity.ViewHolder holder;
+                ListCampaniaActivity.ViewHolder holder;
 
                 if (convertView == null) {
                     convertView = getActivity().getLayoutInflater().inflate(R.layout.reporte, parent, false);
-                    holder = new ListReporteActivity.ViewHolder();
+                    holder = new ListCampaniaActivity.ViewHolder();
                     holder.nombre = (TextView) convertView.findViewById(R.id.nombre);
                     holder.subtitle = (TextView) convertView.findViewById(R.id.subtitle);
                     holder.cierre = (TextView) convertView.findViewById(R.id.cierre);
@@ -183,7 +183,7 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
                     convertView.setTag(holder);
 
                 } else {
-                    holder = (ListReporteActivity.ViewHolder) convertView.getTag();
+                    holder = (ListCampaniaActivity.ViewHolder) convertView.getTag();
                 }
 
                 final Reporte reporte = itemList.get(position);

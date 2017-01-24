@@ -34,7 +34,6 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
-import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.PlaceBuffer;
@@ -100,7 +99,6 @@ public class MapCasaActivity extends AppCompatActivity implements OnMapReadyCall
             @Override
             public void onResult(@NonNull LocationSettingsResult result) {
                 final Status status = result.getStatus();
-                final LocationSettingsStates states = result.getLocationSettingsStates();
                 switch (status.getStatusCode()) {
                     case LocationSettingsStatusCodes.SUCCESS:
                         // All location settings are satisfied. The client can
@@ -163,6 +161,7 @@ public class MapCasaActivity extends AppCompatActivity implements OnMapReadyCall
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 final PlaceAutoCompleteAdapter.PlaceAutocomplete item = mAdapter.getItem(position);
+                assert item != null;
                 final String placeId = String.valueOf(item.placeId);
                 Log.i("hola", "Autocomplete item selected: " + item.description);
 
@@ -213,7 +212,7 @@ public class MapCasaActivity extends AppCompatActivity implements OnMapReadyCall
 
     public void send(View view) {
         int casa = getIntent().getIntExtra("casa", -1);
-        String serviceUrl = getString(R.string.gps_casa, casa);
+        String serviceUrl = getString(R.string.gps_tienda, casa);
 
         final String lat = String.valueOf(myPosition.getPosition().latitude);
         final String lng = String.valueOf(myPosition.getPosition().longitude);

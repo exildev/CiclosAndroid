@@ -35,13 +35,12 @@ import java.util.List;
 
 public class MapRutaActivity extends AppCompatActivity implements OnMapReadyCallback, RoutingListener {
 
+    private static final int[] COLORS = new int[]{R.color.colorPrimaryDark, R.color.colorPrimary, R.color.tealPrimary, R.color.colorAccent, R.color.primary_dark_material_light};
+    ArrayList<LatLng> waypoints;
     private GoogleMap mMap;
     private int page = 1;
     private int piscinero;
-    ArrayList<LatLng> waypoints;
-
     private List<Polyline> polylines;
-    private static final int[] COLORS = new int[]{R.color.colorPrimaryDark, R.color.colorPrimary, R.color.tealPrimary, R.color.colorAccent, R.color.primary_dark_material_light};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +84,7 @@ public class MapRutaActivity extends AppCompatActivity implements OnMapReadyCall
     }
 
     private void loadItems() {
-        String serviceUrl = getString(R.string.list_asignaciones_piscinero, piscinero, page);
+        String serviceUrl = getString(R.string.list_asignaciones_piscinero, page);
         String url = getString(R.string.url, serviceUrl);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -99,7 +98,7 @@ public class MapRutaActivity extends AppCompatActivity implements OnMapReadyCall
                             double lng = campo.getDouble("longitud");
                             LatLng casa = new LatLng(lat, lng);
                             waypoints.add(casa);
-                            String cliente = campo.getString("nombreCF") + " " + campo.getString("nombreCL");
+                            String cliente = campo.getString("nombreP");
                             mMap.addMarker(new MarkerOptions().position(casa).title(cliente));
                         }
                     }

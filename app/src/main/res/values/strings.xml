@@ -196,13 +196,13 @@
     <string name="sin_numero">Sin numero</string>
     <string name="piscinero">Piscinero</string>
     <string name="supervisor">Supervisor</string>
-    <string name="nav_piscineros">Piscineros</string>
+    <string name="nav_ruta">Mi ruta</string>
     <string name="piscinas">Piscinas</string>
     <string name="title_activity_piscinas">Asignacion de piscinas</string>
     <string name="shop_not_found">La tienda no ha sido encontrada</string>
     <string name="campanias_not_found">No se encontraron campañas</string>
 
-    <string name="piscina_title">Piscina %1$s, Tipo %2$s</string>
+    <string name="piscina_title">%1$s</string>
     <string name="piscina_medidas">%1$.1fm ancho, %2$.1fm largo, %3$.1fm alto</string>
     <string name="success_response">operación realizada con exito</string>
     <string name="title_activity_ruta_p">Ruta Piscinero</string>
@@ -235,4 +235,5 @@
     <string name="historial_de_reporte">Historial de reporte</string>
     <string name="acerca_de">Acerca de</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

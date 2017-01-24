@@ -3,134 +3,102 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-<<<<<<< HEAD
-        sha1="9abf11d546d9e0ee82da86df608ced7a961b76ac">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.0.1_52af0115d494cd75ad8828e84476e8831e522f5f\classes.dex" />
-=======
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_9309a04399b26cb5591d0f7ceae0c87f50d782c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c87efebbc32a3ecf837acc56f6b4fb4b00479ca">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00ba10e3f5944d77f854d0b031d548d7d08bebc1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_1126d625300736819552142b894eed59598a5e67/classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_8bba732f39aa866127fb6e2c21747f9c74509764\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_180e34ae529f75a89491aa83b35bb81aacf61077/classes.dex" />
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_abff5bf6cd87daceeb6e5a834095be90a3430c22\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fa2a88b4cd76268b78bc61f0c8ad4b14ba089945">
-        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a88981e2f23506e9d83e9ae3479640bb4a9bb77a/classes.dex" />
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_e35c7c0ee3518505be719883f18b8d786a35edac\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.liuguangqiang.permissionhelper/permissionhelper/0.1.0/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
-        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_9f131628b6c2ad575a222374763a663f82e506bd/classes.dex" />
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_03ee848ac99f9b7ada47779b2001556003a41a4e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.rubensousa/gravitysnaphelper/0.1/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-gravitysnaphelper-0.1_fbe2bc023c1620c23649ee235325edd9cfe51e56/classes.dex" />
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_6491373cb6c0a99350981d53005925237a74df5b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.liuguangqiang.permissionhelper/permissionhelper/0.1.0/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_6722c1b131a961dd688cf88d64e3d49e6688c0e5/classes.dex" />
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_e8d6a6976b745c677b51fd772bb060855228e1e4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/com.github.jd-alexander/library/1.1.0/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.ugurcany\InfiniteListView\1.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.jd-alexander-library-1.1.0_8bd0e63857997e7235df29f56343ab82f7dc3f16/classes.dex" />
+        sha1="7c5e03ee5e4f0ed43bcf60640fe96e6ea8abb209">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ugurcany-InfiniteListView-1.1.0_f6cab0fd07be5bc1a62db4edc90e9b776d81fce1\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_5c9dc7b44079865d995bbf07ec116561274cabe4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cristobal/.gradle/caches/modules-2/files-2.1/org.java-websocket/Java-WebSocket/1.3.0/db2658f013fb163de4a99274c2eb9e17efe535d2/Java-WebSocket-1.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/Java-WebSocket-1.3.0_ef28d6dda899abc529eae83c61a729d42537a4a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.7_4662fec2e8fe508292ab875c545a8a7466805e4e/classes.dex" />
->>>>>>> develop
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.liuguangqiang.ipicker\library\1.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ab2b6d009d54577e5b681b1c2d928dbb29576138">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.liuguangqiang.ipicker-library-1.0.1_2eedc7a453a2d7106e2ee0bf38562e5b4c171b38\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="293c0aaa45152daaba447c42eae70dca670c899c">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a3d2b68b4a64c532c24a427a16b560f3d383b52f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_e93a7c30449bd1a923f6fa71c6d32c267f9c960e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_c03532ac664f5c2c4015205a50d5d37856618aad\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_4891d372acc84c1ab12fbc322b92520ef8f33958\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.liuguangqiang.ipicker\library\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab2b6d009d54577e5b681b1c2d928dbb29576138">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.liuguangqiang.ipicker-library-1.0.1_fb56b389588fbecd586ce2fd450134488daf2df2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -139,232 +107,88 @@
         optimize="true"
         revision="25.0.2"
         sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_c615bed43961ea775e4e8b3fab5e083048b240a2\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_c615bed43961ea775e4e8b3fab5e083048b240a2\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rubensousa\floatingtoolbar\1.2.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="bf2ed5b1c1a204e927a610e21bc17daebe912824">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rubensousa-floatingtoolbar-1.2.1_25fb55bb28d48692eb22c05e9fdf7170ee5267b1\classes.dex" />
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_64dea411d268b9b102df0a90a6754892eb7eaa55\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rahatarmanahmed\circularprogressview\2.5.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rahatarmanahmed-circularprogressview-2.5.0_36cf89e6a06cca9dd3b3a916bdd6801d1288a697\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.ugurcany\InfiniteListView\1.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7c5e03ee5e4f0ed43bcf60640fe96e6ea8abb209">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ugurcany-InfiniteListView-1.1.0_663fb1d62e6e9aa1fd9614c3196a835ee6f80e29\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_33a07de18fa84cc97f82abbb8d2a43e8f6837c0c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.7\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.zhanghai.android.materialprogressbar-library-1.1.7_3870f02fa71e421d0385c23a53aa4636bc02bc32\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\de.greenrobot\eventbus\3.0.0-beta1\d4a559b2dfb3e8a00ed37c440e118584f60db046\eventbus-3.0.0-beta1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d4a559b2dfb3e8a00ed37c440e118584f60db046">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0-beta1_98fd612f4e1fc4d50c8db2ec253d55cafef92937\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_8ac5132823583205dcc8d6988add23b67716d031\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.jd-alexander\library\1.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.jd-alexander-library-1.1.0_a892ae5d53ad2f5c80bbc16e745dbeee414f6443\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_7db293e482bfdadc5d25a4683f60fff4bd2cfbb4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_6c3906404ac59ba68b1f733eaa76952429d226ea\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_da2ef328fb0198e82129207def2a6f23f0ad3113\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.liuguangqiang.permissionhelper\permissionhelper\0.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.liuguangqiang.permissionhelper\permissionhelper\0.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1dc3f5edb8029584ccd1ca91b934a8b47466b1e0">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_07ba6de14abdafaf6592c6c65c6c9b531bfda1ab\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.liuguangqiang.permissionhelper-permissionhelper-0.1.0_13e79f134b11e6206d25189d0aef0e18036af2ec\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rubensousa\floatingtoolbar\1.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f6d29cfd51f5411aa867a6392693b2360ac5d433\classes.dex" />
+        sha1="bf2ed5b1c1a204e927a610e21bc17daebe912824">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rubensousa-floatingtoolbar-1.2.1_8ceca3bf50f052f0335814394585fb80a2bd8ff5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_686c1701beb816b64aefc40e57b98370654bb661\classes.dex" />
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_9e5441aedd3c4d32f88d4ea3f1ac21545c706b39\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.fiskurgit\SimpleViewPager\1.0.10\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aa53f45cdc271b9059adcc5292eba380d22ff859">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.fiskurgit-SimpleViewPager-1.0.10_1c77b58573d25905ddd23c75fbbb217608a8042f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_434d096f07ebe67d3a76fa0e29034292de32ed73\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b45a18e9349339e9605698824db4583c30d1ea62">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9e9f1aa644cc79231d11a4e7080e6cad6dea5e55\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.github.nkzawa\socket.io-client\0.3.0\8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9\socket.io-client-0.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\socket.io-client-0.3.0_d6ebd1ba51e70875caa4e453d832206336b01f85\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.ganfra\material-spinner\1.1.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.ganfra\material-spinner\1.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ganfra-material-spinner-1.1.1_17b4df7f567021e57555bab9963a31855f5ae223\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ganfra-material-spinner-1.1.1_7478b87ebbfec47862ab50765287dc672b42ab4e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.tarek360\Animated-Icons\1.0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f9838c3e5abd04ff5519823a3fa321192b9b300c">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.tarek360-Animated-Icons-1.0.1_8763cb0ba78c1e31d8a80d47ac8bb6a30f4ac237\classes.dex" />
+        sha1="9abf11d546d9e0ee82da86df608ced7a961b76ac">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.0.1_e3402fc45e1b018fe5020beda333a3c7df00a548\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\3.0.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="50edbe486cc0c5b0be647296124320e626157b3b">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-3.0.0_eeaca0b1740d9511a0bdc07f2d1e636acacdae97\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_0595f4f6915474c01ba6298022702054430f4ce4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_d84e92e1a629a3171c6ee5b897b8ff3251fa731f\classes.dex" />
+        sha1="3aa8866665d015842ab88c7eb04a6150a4b52162">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b1592ff11eefca60e090b2d33fc7eb8cc3375a43\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_46946f421c65ca76d27a56a17f339dbeb89cc8fc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\net.gotev\uploadservice\3.0.3\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\net.gotev\uploadservice\3.0.3\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="679035e7050e209cfa2bd29f08c20eecbec96063">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.gotev-uploadservice-3.0.3_8c749a489d69e87cf64dd5bacbad966b4d3dd7da\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_fc09d9bbc8617510d669925a4aee67b0c61a9534\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.gotev-uploadservice-3.0.3_50631d7f029a26227b7ef3254c24e75047963ef0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -373,7 +197,16 @@
         optimize="true"
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_96b3fcd10dcb3980fb46009deb4718ae21999d9c\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_96b3fcd10dcb3980fb46009deb4718ae21999d9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_175a3e9cf090ce74c4ea795d8d80365234af9704\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -382,101 +215,340 @@
         optimize="true"
         revision="25.0.2"
         sha1="3ca9d0d53a27ecb88538ed874be417cfa827db5d">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\engine.io-client-0.3.1_f1f229900081cd33d8d44998351189a282a41a0f\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\engine.io-client-0.3.1_f1f229900081cd33d8d44998351189a282a41a0f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rubensousa\gravitysnaphelper\0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
-<<<<<<< HEAD
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rubensousa-gravitysnaphelper-0.1_24d6ac8549b66847320d2553c3ab1c647b16fdc6\classes.dex" />
-=======
-        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rubensousa-gravitysnaphelper-0.1_f2212e4f6d2069ed3d9c072c0153398c3b898362/classes.dex" />
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_f45a27a7eae0ff2d3de43838fb3165d9c8860862\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/home/cristobal/Documentos/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_acdeb8fec618a249e44c82f6281f391a9cfc81f9/classes.dex" />
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_bbf71888fcd53cb5ada71f5cba9b1e9887a21ed6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_13c3fb1e9226de26355361285783b66792a1e690/classes.dex" />
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_02706195f5de2c5223fba0fd1e51e5a49a76881f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f94a3dec59ed6ab821f0ddce81f5fc0896c7fb95">
-        <dex dex="/home/cristobal/Documentos/Exile/CiclosAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edbbe4e3da854c8be9051f91e81518a419a81d80/classes.dex" />
->>>>>>> develop
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_9e27d288b60f2fcaea29d387690e4788ebb62234\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_c2def78a64a91c6071d16a4209087b31456c2d2a\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_50f57ead80c47b3f9be1f41e1147706e53061c1e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.0.2\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.0.2_3fcd4dc16b2831c01cd156e48266779795f854d7\classes.dex" />
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_60d713c1931a86b3fd17b8a7960e9b0a5c0c774f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_1c97d5560a95cc6f9a6da7a962fe7a316734f672\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_23cc0b20da0d97bb3ad0e240ccec395df418deca\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_e3af09cc7caf9b4f83831e2afe8f059d04aa099f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_860b02c6f2fb934bd0f0ca114eb83fe4bf1b8801\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_c20614b613175585d36d3718f301dfa6431c35bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_1ff82ac9a4a26b74d72fed6f521252290002f46d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_1217eea4ff0e8b0a3ae991291ac36dc770372637\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_a45167361bf6be056afa069072ac9c4af1c75eff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_963b56136f478157ff8f8a227503eed9511a0041\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\de.greenrobot\eventbus\3.0.0-beta1\d4a559b2dfb3e8a00ed37c440e118584f60db046\eventbus-3.0.0-beta1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4a559b2dfb3e8a00ed37c440e118584f60db046">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0-beta1_98fd612f4e1fc4d50c8db2ec253d55cafef92937\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_1c2eb527456a2ee0422cdf182e6c0159a0ba7cec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_a0994d644606b87903cc5228a233f829172250eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_6d0b161b49291c448075350fdd5c40a2d90fe182\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="cfb91ea7c6890336890ccb42767041af6b863e32">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_7cba648bcf6c5a560b51152032be3f97b1bd0a4f\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_c9bc0273eaab48273d2d37f5e519bb26c17e2681\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\3.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_4b94d2870f53877e90d5f3f1f06317a5ed63e9d0\classes.dex" />
+        sha1="50edbe486cc0c5b0be647296124320e626157b3b">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-3.0.0_d784074e1d81d76724852eed17e013c1a83d6372\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_4c85cf087997aadb3e07fc70ba7ee0a39e006c10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_d89e8eb8903558aa6c0d18e8f8b5c127b445215c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_34eb76a7cc9fc8239a40fad6a89a7ef79800d1c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rubensousa\gravitysnaphelper\0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4423b5403c4c22d7c63868d61524e132f17818b">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rubensousa-gravitysnaphelper-0.1_aee0130c22f63ecc0c78d0a0b6685a12c3eb71be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_297693d627d1cc43422935d7ba61c371a263f8ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_4151f9647d6d5b4fbde4dad7fb2ebb617b1b0036\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_818a6b4b83d30c9bb53bfa86677578579411df68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_b94752cd7132a6f610f592ef8232dedddc48fe9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_e475cb05c050e265f6cac47d415ea767fa554371\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.rahatarmanahmed\circularprogressview\2.5.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rahatarmanahmed-circularprogressview-2.5.0_b6bbac0c2072102ae1a4f1d13403c449e53dbf00\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_7db293e482bfdadc5d25a4683f60fff4bd2cfbb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_9002ab6f8badbc3706b7f22d4df976b0e5dfdf82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_bbd0795cf1587451173f850e8c96ca020841d707\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.tarek360\Animated-Icons\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f9838c3e5abd04ff5519823a3fa321192b9b300c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.tarek360-Animated-Icons-1.0.1_359a004c51292588b1fbd0477fe2f3eb25699a61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_03a9c0cc1bdbbcbbd7d0df57508ebe730b264a34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_cc3111457bc649a8ccdec33c0f0641f72acb712c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.afollestad.material-dialogs\core\0.9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d3f8ab57967a9149262ad36a46477fc2515f6ac8">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.afollestad.material-dialogs-core-0.9.0.2_fd5687093fe79afd5f2b321ec5dfdd70fd4d4f7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_eb6b74ada99671f3bdf2d82715ba3f15b4a7dfb0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -485,52 +557,187 @@
         optimize="true"
         revision="25.0.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_cad3aca85b872a7884e73fe19a59e78f6f28e858\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_cad3aca85b872a7884e73fe19a59e78f6f28e858\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_a06b1c59ac1358e63c2da3bcecb943cc57cf72c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1478a113f04bf0b679037b4f6bd88bd1837b96a3">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.zhanghai.android.materialprogressbar-library-1.1.7_82a834388844789e47d21037c429fcac20e1b6fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_735e200a5bdf195ed4df3acef7c230a34dfc17f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_793b2ea65faa0b6d2a7b5dbee0aad4233cc70866\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_0da3f285044355372003977244e1b335d02aa888\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_c6b9f5dbe6930bed8ef8a3feb966c9775846a1ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_aa8235082b2f55659fa29a85fc605576b458895c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f6d29cfd51f5411aa867a6392693b2360ac5d433\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_f95a65b57501746736423600d031140128a8192b\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_2b455c327c103c6feeff57df0ca1cefb5f7ad31e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_ff478fb8d1cf5298f6d258758473ad53c622f972\classes.dex" />
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_e3462ab3fc43b106b1d869b0168ea5a5bef56cf5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.afollestad.material-dialogs\core\0.9.0.2\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d3f8ab57967a9149262ad36a46477fc2515f6ac8">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.afollestad.material-dialogs-core-0.9.0.2_97d9d4ddf5b02938530f69a134e9502caf9c6da6\classes.dex" />
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_a36e8a8dd42c730a817d556d8eb105258bbf4822\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.0.2\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_55dfaa15ef5765aa596c78cc8495642ac29e3236\classes.dex" />
+        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.0.2_74a05fbe295c3709a7dce9ab0bc3998a99cba44a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_e8e1e475bdde09a473e5b00ca807c9a05a497f9b\classes.dex" />
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_ca902e3386a4c61c6d1accccbaffbcb32cf87ca2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_53c8c322fdff411e0a493dc5cd395dfa95eaf499\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_c261daa9e095109098c0d3d13285694ef4e490fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_7095235e76c88e514e232509426ae7417f087dde\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_28d5547683165445086a80518dc507d436c912e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_be3253da0e42a66cd3d182059376544a92813d1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\.gradle\caches\modules-2\files-2.1\com.github.nkzawa\socket.io-client\0.3.0\8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9\socket.io-client-0.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\socket.io-client-0.3.0_d6ebd1ba51e70875caa4e453d832206336b01f85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.fiskurgit\SimpleViewPager\1.0.10\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa53f45cdc271b9059adcc5292eba380d22ff859">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.fiskurgit-SimpleViewPager-1.0.10_609d0153842e6c320742efd64b8ca59013dd3942\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -539,25 +746,106 @@
         optimize="true"
         revision="25.0.2"
         sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\Java-WebSocket-1.3.0_c90e79d822c6cbbf5708e32e6e4244be7e57e122\classes.dex" />
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\Java-WebSocket-1.3.0_c90e79d822c6cbbf5708e32e6e4244be7e57e122\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_9a815258e6a40ebed76a4b82f2679754ad9bd5c7\classes.dex" />
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_bb40990280de83b155b102de44aff25eedbfbc74\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\pico\Documents\AndroidProjects\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_281a96c6425d91eada47501daa365a5ea15e6749\classes.dex" />
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_8d195fa75a2f53e54b763efb628f1092c89a25c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_fc7ce13481fb75442552ead5a349ae59e5896075\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_c66fb8f36d4b85f44b06a1a6317b41c73ea45b57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_b189d264944a0e3c57793017022642c5166bf5f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.github.jd-alexander\library\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bde00e92c4a5a0a1075df7404248ccb30fc7e62b">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.jd-alexander-library-1.1.0_78aed34269bdcec269885d0a9bcf66c31c3ddb80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_47b640999913c8680df99591193a9a8f65321755\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_290b00e71d8eb760d610baa1dfae52b14b0d0d48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_a14d1179e5ac919c67501fbfbe28453b02684853\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_799098e234e1395602e0a912d1d557afd85fef82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_2d94bd15984d9dbb3eae0bde80abac1e745d0888\classes.dex" />
     </item>
 
 </items>

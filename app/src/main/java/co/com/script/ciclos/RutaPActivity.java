@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.android.volley.AuthFailureError;
@@ -36,12 +35,8 @@ import co.com.script.ciclos.models.Asignacion;
 public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnStartDragListener {
 
     private static final int MAP_SAVE = 1;
-    private ItemTouchHelper mItemTouchHelper;
-    private int nu = 0;
-    TextView tvNumber;
     ItemAdapter itemAdapter;
-
-    private int piscinero;
+    private ItemTouchHelper mItemTouchHelper;
     private int page = 1;
 
     @Override
@@ -56,8 +51,6 @@ public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnSt
                 finish();
             }
         });
-
-        piscinero = getIntent().getIntExtra("piscinero", -1);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.content_ruta_p);
         assert recyclerView != null;
@@ -120,7 +113,7 @@ public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnSt
     }
 
     private void loadItems() {
-        String serviceUrl = getString(R.string.list_asignaciones_piscinero, piscinero, page);
+        String serviceUrl = getString(R.string.list_asignaciones_piscinero, page);
         String url = getString(R.string.url, serviceUrl);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -135,19 +128,16 @@ public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnSt
                         JSONObject campo = object_list.getJSONObject(i);
                         Log.i("campo", campo.toString());
                         int id = campo.getInt("id");
-                        int piscina_id = campo.getInt("piscina");
+                        int piscina_id = campo.getInt("campana");
                         String nombre = campo.getString("nombreP");
-                        String tipo = campo.getString("tipo");
-                        double largo = campo.getDouble("largo");
-                        double ancho = campo.getDouble("ancho");
-                        double profundidad = campo.getDouble("profundidad");
-                        String cliente = campo.getString("nombreCF") + " " + campo.getString("nombreCL");
+                        String cliente = campo.getString("nombreT");
                         int orden = campo.getInt("orden");
-                        int casa = campo.getInt("casa");
+                        int casa = campo.getInt("tienda");
+                        int supervisor = campo.getInt("supervisor_id");
 
                         boolean haveGPS = !campo.get("latitud").equals(null) && !campo.get("longitud").equals(null);
 
-                        ItemAdapter.itemList.add((itemAdapter.getItemCount()), new Asignacion(id, piscina_id, nombre, ancho, largo, profundidad, tipo, cliente, orden, haveGPS, casa));
+                        ItemAdapter.itemList.add((itemAdapter.getItemCount()), new Asignacion(id, piscina_id, nombre, cliente, orden, haveGPS, casa, supervisor));
                         itemAdapter.notifyDataSetChanged();
                     }
                     if (itemAdapter.getItemCount() < count) {
@@ -234,7 +224,7 @@ public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnSt
         Log.i("asignacion", asignacion.toString());
         if (!asignacion.isHaveGPS()) {
             Intent intent = new Intent(this, MapCasaActivity.class);
-            intent.putExtra("casa", asignacion.getCasa());
+            intent.putExtra("casa", asignacion.getTienda());
             startActivityForResult(intent, MAP_SAVE);
         }
     }

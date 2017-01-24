@@ -217,18 +217,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle(getString(R.string.shops));
-        } else if (id == R.id.piscieros_btn) {
-            MenuItem myActionMenuItem = mMenu.findItem(R.id.action_search);
-            Log.e("menu item", myActionMenuItem.toString());
-            myActionMenuItem.setVisible(true);
-            SearchView searchView = (SearchView) myActionMenuItem.getActionView();
-            Fragment fragment = PiscineroFragment.newInstance(searchView);
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.main_frame, fragment)
-                    .commit();
-            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle(getString(R.string.piscineros));
+        } else if (id == R.id.miruta_btn) {
+            Intent intent = new Intent(this, RutaPActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_rutas || id == R.id.rutas_btn) {
             startActivity(new Intent(this, RutaActivity.class));
         } else if (id == R.id.nav_recordatorio) {

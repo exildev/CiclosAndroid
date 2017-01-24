@@ -8,27 +8,21 @@ public class Asignacion {
     private int id;
     private int piscina_id;
     private String nombre;
-    private double ancho;
-    private double largo;
-    private double profundidad;
-    private String tipo;
     private String cliente;
     private int orden;
     private boolean haveGPS;
-    private int casa;
+    private int tienda;
+    private int supervisor;
 
-    public Asignacion(int id, int piscina_id, String nombre, double ancho, double largo, double profundidad, String tipo, String cliente, int orden, boolean haveGPS, int casa) {
+    public Asignacion(int id, int piscina_id, String nombre, String cliente, int orden, boolean haveGPS, int tienda, int supervisor) {
         this.id = id;
         this.piscina_id = piscina_id;
         this.nombre = nombre;
-        this.ancho = ancho;
-        this.largo = largo;
-        this.profundidad = profundidad;
-        this.tipo = tipo;
         this.cliente = cliente;
         this.orden = orden;
         this.haveGPS = haveGPS;
-        this.casa = casa;
+        this.tienda = tienda;
+        this.supervisor = supervisor;
     }
 
     public int getId() {
@@ -43,22 +37,6 @@ public class Asignacion {
         return nombre;
     }
 
-    public double getAncho() {
-        return ancho;
-    }
-
-    public double getLargo() {
-        return largo;
-    }
-
-    public double getProfundidad() {
-        return profundidad;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
     public String getCliente() {
         return cliente;
     }
@@ -71,8 +49,16 @@ public class Asignacion {
         return haveGPS;
     }
 
-    public int getCasa() {
-        return casa;
+    public int getTienda() {
+        return tienda;
+    }
+
+    public int getSupervisor() {
+        return supervisor;
+    }
+
+    public void setSupervisor(int supervisor) {
+        this.supervisor = supervisor;
     }
 
     @Override
@@ -81,13 +67,10 @@ public class Asignacion {
                 "id=" + id +
                 ", piscina_id=" + piscina_id +
                 ", nombre='" + nombre + '\'' +
-                ", ancho=" + ancho +
-                ", largo=" + largo +
-                ", profundidad=" + profundidad +
-                ", tipo='" + tipo + '\'' +
                 ", cliente='" + cliente + '\'' +
                 ", orden=" + orden +
                 ", haveGPS=" + haveGPS +
+                ", tienda=" + tienda +
                 '}';
     }
 }

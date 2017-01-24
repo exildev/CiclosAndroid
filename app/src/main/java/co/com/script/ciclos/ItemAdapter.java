@@ -26,19 +26,12 @@ import co.com.script.ciclos.models.Asignacion;
 
 class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> implements ItemTouchHelperAdapter {
 
+    static List<Asignacion> itemList = new ArrayList<>();
+    private final Context context;
+    private final RutaPActivity dragStartListener;
     private int from = -1;
     private int to = -1;
 
-    interface OnStartDragListener {
-
-        void onStartDrag(RecyclerView.ViewHolder viewHolder);
-    }
-
-    private final Context context;
-    static List<Asignacion> itemList = new ArrayList<>();
-
-
-    private final RutaPActivity dragStartListener;
 
     ItemAdapter(Context context, RutaPActivity dragStartListener) {
         this.context = context;
@@ -84,10 +77,9 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> imple
         final int i = position;
         final Asignacion piscina = itemList.get(position);
 
-        itemViewHolder.title.setText(context.getString(R.string.piscina_title, piscina.getNombre(), piscina.getTipo()));
+        itemViewHolder.title.setText(context.getString(R.string.piscina_title, piscina.getNombre()));
         itemViewHolder.cliente.setText(piscina.getCliente());
-        String medidas = context.getString(R.string.piscina_medidas, piscina.getAncho(), piscina.getLargo(), piscina.getProfundidad());
-        itemViewHolder.medidas.setText(piscina.getOrden() + " " + medidas);
+
         if (piscina.isHaveGPS()) {
             itemViewHolder.have_gps_card.setVisibility(View.VISIBLE);
         } else {
@@ -115,6 +107,11 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> imple
     public ItemViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.ruta_piscinero, viewGroup, false);
         return new ItemViewHolder(itemView);
+    }
+
+    interface OnStartDragListener {
+
+        void onStartDrag(RecyclerView.ViewHolder viewHolder);
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder implements

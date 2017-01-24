@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
 
     private void setMenu(View fragment) {
         if (piscinero) {
-            fragment.findViewById(R.id.piscieros_btn).setVisibility(View.GONE);
+            fragment.findViewById(R.id.miruta_btn).setVisibility(View.GONE);
         } else {
             fragment.findViewById(R.id.rutas_btn).setVisibility(View.GONE);
         }

@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="36d4f1846480c66d221063697523c05a98448755">
+        sha1="e97784223c1474c6a7adbbf4f4ee06bc7bfd3d6c">
         <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00ba10e3f5944d77f854d0b031d548d7d08bebc1\classes.dex" />
     </item>
     <item
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="06b85342148ea6785341f7e962841b7e9c286c11">
+        sha1="e8eb1b6b3b1a8acf704bdd10ee1920079b5cfe54">
         <dex dex="C:\Users\pico\Documents\GitHub\CiclosAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b1592ff11eefca60e090b2d33fc7eb8cc3375a43\classes.dex" />
     </item>
     <item

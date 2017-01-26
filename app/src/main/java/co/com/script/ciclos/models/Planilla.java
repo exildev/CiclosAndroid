@@ -2,88 +2,58 @@ package co.com.script.ciclos.models;
 
 
 public class Planilla {
-    private double ancho;
     private Boolean espera;
-    private double largo;
-    private String nombreCF;
-    private String nombreCL;
+    private String nombreT;
     private String nombreP;
-    private int piscina;
-    private int piscinero_id;
+    private int campana;
+    private int supervisor_id;
     private Integer planilla;
-    private double profundidad;
     private Boolean salida;
-    private String tipo;
     private Integer orden;
     private Integer id;
     private Double latitud;
     private Double longitud;
 
-    public Planilla(double ancho, Boolean espera, double largo, String nombreCF, String nombreCL, String nombreP, int piscina, int piscinero_id, Integer planilla, double profundidad, Boolean salida, String tipo, Integer orden, Integer id, Double latitud, Double longitud) {
-        this.ancho = ancho;
+    public Planilla(Boolean espera, String nombreT, String nombreP, int campana, int supervisor_id, Integer planilla, Boolean salida, Integer orden, Integer id, Double latitud, Double longitud) {
         this.espera = espera;
-        this.largo = largo;
-        this.nombreCF = nombreCF;
-        this.nombreCL = nombreCL;
+        this.nombreT = nombreT;
         this.nombreP = nombreP;
-        this.piscina = piscina;
-        this.piscinero_id = piscinero_id;
+        this.campana = campana;
+        this.supervisor_id = supervisor_id;
         this.planilla = planilla;
-        this.profundidad = profundidad;
         this.salida = salida;
-        this.tipo = tipo;
         this.orden = orden;
         this.id = id;
         this.latitud = latitud;
         this.longitud = longitud;
     }
 
-    public double getAncho() {
-        return ancho;
-    }
-
     public Boolean getEspera() {
         return espera;
     }
 
-    public double getLargo() {
-        return largo;
-    }
-
-    public String getNombreCF() {
-        return nombreCF;
-    }
-
-    public String getNombreCL() {
-        return nombreCL;
+    public String getNombreT() {
+        return nombreT;
     }
 
     public String getNombreP() {
         return nombreP;
     }
 
-    public int getPiscina() {
-        return piscina;
+    public int getCampana() {
+        return campana;
     }
 
-    public int getPiscinero_id() {
-        return piscinero_id;
+    public int getSupervisor_id() {
+        return supervisor_id;
     }
 
     public Integer getPlanilla() {
         return planilla;
     }
 
-    public double getProfundidad() {
-        return profundidad;
-    }
-
     public Boolean getSalida() {
         return salida;
-    }
-
-    public String getTipo() {
-        return tipo;
     }
 
     public Integer getOrden() {

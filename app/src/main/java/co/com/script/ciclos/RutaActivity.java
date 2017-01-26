@@ -115,6 +115,57 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
         visitMessages();
     }
 
+    private void visitMessages() {
+        ArrayList<String> messages = new ArrayList<>();
+
+        for (JSONObject notification : NotixFactory.notifications) {
+            try {
+                JSONObject data = notification.getJSONObject("data");
+                String tipo = data.getString("tipo");
+                if (tipo.equals("Asignacion")) {
+                    String id = notification.getString("_id");
+                    messages.add(id);
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        notix.visitMessages(messages);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.container);
+        fragment.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onNotix(JSONObject data) {
+        NotixFactory.buildNotification(this, data);
+    }
+
+    @Override
+    public void onVisited(JSONObject data) {
+        Log.i("notifications", NotixFactory.notifications.size() + "");
+        try {
+            JSONArray messages_id = data.getJSONArray("messages_id");
+            for (int i = 0; i < messages_id.length(); i++) {
+                String id = messages_id.getString(i);
+                for (JSONObject notification : NotixFactory.notifications) {
+                    String _id = notification.getString("_id");
+                    if (id.equals(_id)) {
+                        NotixFactory.notifications.remove(notification);
+                        break;
+                    }
+                }
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        Log.i("notifications", NotixFactory.notifications.size() + "");
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -221,9 +272,8 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
 
                     final Planilla planilla = itemList.get(position);
                     if (planilla != null) {
-                        holder.title.setText("Piscina " + planilla.getNombreP() + ", tipo " + planilla.getTipo());
-                        holder.cliente.setText(planilla.getNombreCF() + " " + planilla.getNombreCL());
-                        holder.medidas.setText(planilla.getProfundidad() + "m alto, " + planilla.getAncho() + "m ancho, " + planilla.getLargo() + "m largo");
+                        holder.title.setText(planilla.getNombreP());
+                        holder.cliente.setText(planilla.getNombreT());
 
                         if (planilla.getPlanilla() != null && (planilla.getSalida() != null && planilla.getSalida()) && (planilla.getEspera() == null || !planilla.getEspera())) {
                             holder.action_image.setImageResource(R.drawable.ic_done_all_24dp);
@@ -240,10 +290,10 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             holder.info_btn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Log.i("piscina", planilla.getPiscina() + "");
+                                    Log.i("piscina", planilla.getCampana() + "");
                                     Log.i("planilla", planilla.getPlanilla() + "");
                                     Intent intent = new Intent(getActivity(), PlanillaActivity.class);
-                                    intent.putExtra("piscina", planilla.getPiscina());
+                                    intent.putExtra("piscina", planilla.getCampana());
                                     intent.putExtra("planilla", planilla.getPlanilla());
                                     PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
                                 }
@@ -253,9 +303,9 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             holder.info_btn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Log.i("piscina", planilla.getPiscina() + "");
+                                    Log.i("piscina", planilla.getCampana() + "");
                                     Intent intent = new Intent(getActivity(), PlanillaActivity.class);
-                                    intent.putExtra("piscina", planilla.getPiscina());
+                                    intent.putExtra("piscina", planilla.getCampana());
                                     PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
                                 }
                             });
@@ -290,22 +340,18 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                         }
                         for (int i = 0; i < object_list.length(); i++) {
                             JSONObject campo = object_list.getJSONObject(i);
-                            double ancho = campo.getDouble("ancho");
+                            Log.i("object", campo.toString());
                             Boolean espera = null;
                             if (campo.has("espera")) {
                                 espera = campo.get("espera").equals(null) ? null : campo.getBoolean("espera");
                             }
-                            double largo = campo.getDouble("largo");
-                            String nombreCF = campo.getString("nombreCF");
-                            String nombreCL = campo.getString("nombreCL");
+                            String nombreT = campo.getString("nombreT");
                             String nombreP = campo.getString("nombreP");
-                            int piscina = campo.getInt("piscina");
-                            int piscinero_id = campo.getInt("piscinero_id");
+                            int campana = campo.getInt("campana");
+                            int supervisor_id = campo.getInt("supervisor_id");
                             Integer planilla = campo.get("planilla").equals(null) ? null : campo.getInt("planilla");
-                            double profundidad = campo.getDouble("profundidad");
                             Boolean salida = campo.get("salida").equals(null) ? null : campo.getBoolean("salida");
 
-                            String tipo = campo.getString("tipo");
                             Integer orden = null;
                             if (campo.has("orden")) {
                                 orden = campo.get("orden").equals(null) ? null : campo.getInt("orden");
@@ -322,7 +368,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             if (campo.has("longitud")) {
                                 longitud = campo.get("longitud").equals(null) ? null : campo.getDouble("longitud");
                             }
-                            infiniteListView.addNewItem(new Planilla(ancho, espera, largo, nombreCF, nombreCL, nombreP, piscina, piscinero_id, planilla, profundidad, salida, tipo, orden, id, latitud, longitud));
+                            infiniteListView.addNewItem(new Planilla(espera, nombreT, nombreP, campana, supervisor_id, planilla, salida, orden, id, latitud, longitud));
                         }
                         Log.i("count", response.getInt("num_rows") + "");
                         if (response.has("count")) {
@@ -419,7 +465,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
 
         void salida(final Planilla planilla) {
             final String nombre = getString(R.string.salida_planilla_nombre, planilla.getNombreP());
-            final String descripcion = getString(R.string.salida_planilla_desc, planilla.getNombreP(), planilla.getNombreCF(), planilla.getNombreCL());
+            final String descripcion = getString(R.string.salida_planilla_desc, planilla.getNombreP(), planilla.getNombreT());
             final String latitud = String.valueOf(myLocation.getLatitude());
             final String longitud = String.valueOf(myLocation.getLongitude());
 
@@ -645,6 +691,14 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
         }
     }
 
+    static class ViewHolder {
+        TextView title;
+        TextView cliente;
+        TextView medidas;
+        CardView info_btn;
+        ImageView action_image;
+    }
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -678,64 +732,5 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
             }
             return null;
         }
-    }
-
-    static class ViewHolder {
-        TextView title;
-        TextView cliente;
-        TextView medidas;
-        CardView info_btn;
-        ImageView action_image;
-    }
-
-    private void visitMessages() {
-        ArrayList<String> messages = new ArrayList<>();
-
-        for (JSONObject notification : NotixFactory.notifications) {
-            try {
-                JSONObject data = notification.getJSONObject("data");
-                String tipo = data.getString("tipo");
-                if (tipo.equals("Asignacion")) {
-                    String id = notification.getString("_id");
-                    messages.add(id);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-        notix.visitMessages(messages);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.container);
-        fragment.onActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    public void onNotix(JSONObject data) {
-        NotixFactory.buildNotification(this, data);
-    }
-
-    @Override
-    public void onVisited(JSONObject data) {
-        Log.i("notifications", NotixFactory.notifications.size() + "");
-        try {
-            JSONArray messages_id = data.getJSONArray("messages_id");
-            for (int i = 0; i < messages_id.length(); i++) {
-                String id = messages_id.getString(i);
-                for (JSONObject notification : NotixFactory.notifications) {
-                    String _id = notification.getString("_id");
-                    if (id.equals(_id)) {
-                        NotixFactory.notifications.remove(notification);
-                        break;
-                    }
-                }
-            }
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        Log.i("notifications", NotixFactory.notifications.size() + "");
     }
 }

@@ -172,7 +172,7 @@ public class ListReporteFragment extends Fragment implements IPicker.OnSelectedL
                     holder.descripcion = (TextView) convertView.findViewById(R.id.descripcion);
                     holder.estado = (TextView) convertView.findViewById(R.id.estado);
                     holder.fecha = (TextView) convertView.findViewById(R.id.fecha);
-                    holder.piscina = (TextView) convertView.findViewById(R.id.piscina);
+                    holder.piscina = (TextView) convertView.findViewById(R.id.campana);
                     holder.tipo = (TextView) convertView.findViewById(R.id.tipo);
                     holder.solution_button = (Button) convertView.findViewById(R.id.solution_button);
                     holder.chat_button = (Button) convertView.findViewById(R.id.chat_button);

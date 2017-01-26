@@ -90,7 +90,7 @@
                 android:text="@string/pisicina_prompt" />
 
             <fr.ganfra.materialspinner.MaterialSpinner
-                android:id="@+id/piscina"
+                android:id="@+id/campana"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:ms_arrowSize="16dp" />

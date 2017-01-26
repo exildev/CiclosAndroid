@@ -137,7 +137,7 @@ public class ReporteActivity extends AppCompatActivity implements IPicker.OnSele
         }
         ArrayAdapter<Field> adapter = new ArrayAdapter<>(ReporteActivity.this, android.R.layout.simple_spinner_item, piscinas);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.piscina);
+        MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.campana);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

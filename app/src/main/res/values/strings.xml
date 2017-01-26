@@ -175,7 +175,7 @@
     <string name="shops">Tiendas</string>
     <string name="fecha_title">Fecha:</string>
     <string name="estado">Estado:</string>
-    <string name="piscina">Piscina:</string>
+    <string name="campana">Piscina:</string>
     <string name="piscineros">Piscineros</string>
     <string name="tipo">Tipo:</string>
     <string name="cierre">Cierre:</string>
@@ -188,8 +188,8 @@
     <string name="informativos">Informativos</string>
 
 
-    <string name="salida_planilla_nombre">Salida de piscina %1$s</string>
-    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la piscina %1$s del cliente %2$s %3$s</string>
+    <string name="salida_planilla_nombre">Salida de campana %1$s</string>
+    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la campana %1$s de la tienda %2$s</string>
 
     <string name="loadin_modal_title">Guardando cambios</string>
     <string name="loadin_modal_content">Por favor espere</string>
@@ -209,7 +209,7 @@
     <string name="title_activity_map_ruta">Mapa de ruta</string>
     <string name="title_activity_notification">Notificaciones</string>
     <string name="title_activity_alarm">Recordatorios</string>
-    <string name="title_activity_map_casa">Ubicacion piscina</string>
+    <string name="title_activity_map_casa">Ubicacion campana</string>
     <string name="buscar">Buscar aquí</string>
     <string name="error_response">Error al enviar los datos</string>
     <string name="gps_success">Ubicación registrada con exito</string>

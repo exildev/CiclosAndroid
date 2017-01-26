@@ -87,7 +87,7 @@
                 style="style/TextAppearance.AppCompat.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pisicina_prompt" />
+                android:text="@string/campana_prompt" />
 
             <fr.ganfra.materialspinner.MaterialSpinner
                 android:id="@+id/campana"

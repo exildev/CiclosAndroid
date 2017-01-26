@@ -105,7 +105,7 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_reporte">Reporte</string>
     <string name="tipo_prompt">Tipo de reporte</string>
-    <string name="pisicina_prompt">Pisicina</string>
+    <string name="campana_prompt">Camapaña</string>
     <string name="title_activity_list_reporte">Historial de reportes</string>
     <string name="title_activity_gallery">Galeria</string>
     <string name="estado_abierto">Abierto</string>
@@ -158,7 +158,7 @@
     <string name="phone_template">3014444070</string>
     <string name="email_template">john.doe@mail.com</string>
     <string name="relate_template">Amigo</string>
-    <string name="nav_shops">Tiendas</string>
+    <string name="nav_shops">P. Venta</string>
     <string name="nav_rutas">Rutas</string>
     <string name="nav_reportes">H. Reportes</string>
     <string name="nav_soluciones">H. Soluciones</string>
@@ -171,8 +171,8 @@
     <string name="profundidad">Profundidad</string>
     <string name="fecha">Fecha:</string>
     <string name="numero">Numero:</string>
-    <string name="shop">Tienda:</string>
-    <string name="shops">Tiendas</string>
+    <string name="shop">P. de venta:</string>
+    <string name="shops">Puntos de venta</string>
     <string name="fecha_title">Fecha:</string>
     <string name="estado">Estado:</string>
     <string name="campana">Piscina:</string>
@@ -188,8 +188,8 @@
     <string name="informativos">Informativos</string>
 
 
-    <string name="salida_planilla_nombre">Salida de campana %1$s</string>
-    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la campana %1$s de la tienda %2$s</string>
+    <string name="salida_planilla_nombre">Salida de campaña %1$s</string>
+    <string name="salida_planilla_desc">actividad de mantenimiento finalizada en la campaña %1$s del punto de venta %2$s</string>
 
     <string name="loadin_modal_title">Guardando cambios</string>
     <string name="loadin_modal_content">Por favor espere</string>
@@ -197,9 +197,9 @@
     <string name="piscinero">Piscinero</string>
     <string name="supervisor">Supervisor</string>
     <string name="nav_ruta">Mi ruta</string>
-    <string name="piscinas">Piscinas</string>
+    <string name="piscinas">Campañas</string>
     <string name="title_activity_piscinas">Asignacion de piscinas</string>
-    <string name="shop_not_found">La tienda no ha sido encontrada</string>
+    <string name="shop_not_found">El punto de venta no ha sido encontrado</string>
     <string name="campanias_not_found">No se encontraron campañas</string>
 
     <string name="piscina_title">%1$s</string>

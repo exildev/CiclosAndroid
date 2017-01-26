@@ -131,7 +131,7 @@
     <string name="cliente_email">john.doe@mail.com</string>
     <string name="cliente_phone">318 393 0939</string>
     <string name="contacts_title">Contactos</string>
-    <string name="pools_title">Piscinas</string>
+    <string name="pools_title">Campañas</string>
     <string name="houses_title">Casas</string>
     <string name="secondary_text">Secondary text</string>
     <string name="two_line_item">Two-line-item</string>
@@ -175,7 +175,7 @@
     <string name="shops">Puntos de venta</string>
     <string name="fecha_title">Fecha:</string>
     <string name="estado">Estado:</string>
-    <string name="campana">Piscina:</string>
+    <string name="campana">Campaña:</string>
     <string name="piscineros">Piscineros</string>
     <string name="tipo">Tipo:</string>
     <string name="cierre">Cierre:</string>
@@ -198,7 +198,7 @@
     <string name="supervisor">Supervisor</string>
     <string name="nav_ruta">Mi ruta</string>
     <string name="piscinas">Campañas</string>
-    <string name="title_activity_piscinas">Asignacion de piscinas</string>
+    <string name="title_activity_piscinas">Asignacion de campañas</string>
     <string name="shop_not_found">El punto de venta no ha sido encontrado</string>
     <string name="campanias_not_found">No se encontraron campañas</string>
 

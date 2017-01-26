@@ -315,16 +315,17 @@ public class ListReporteActivity extends AppCompatActivity implements IPicker.On
                     if (response.has("next")) {
                         page = response.getInt("next");
                     }
+                    Log.i("reponse", object_list.toString());
                     for (int i = 0; i < object_list.length(); i++) {
                         JSONObject campo = object_list.getJSONObject(i);
                         int id = campo.getInt("id");
                         String nombre = campo.getString("nombre");
                         String descripcion = campo.getString("descripcion");
                         String tipo_de_reporte = campo.getString("tipo_n");
-                        String piscina = campo.getString("piscina__nombre");
+                        String piscina = campo.getString("campana__nombre");
                         boolean estado = campo.getBoolean("estado");
                         String fecha = campo.getString("fecha");
-                        String cliente = campo.getString("nombreC") + " " + campo.getString("apellidosC");
+                        String cliente = campo.getString("tienda");
                         String numero = campo.getString("numero");
                         String cierre = Reporte.CIERRES[campo.getInt("cierre") - 1];
                         infiniteListView.addNewItem(new Reporte(id, nombre, descripcion, tipo_de_reporte, piscina, estado, fecha, cliente, cierre, numero));

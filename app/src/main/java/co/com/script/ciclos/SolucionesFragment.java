@@ -59,19 +59,6 @@ public class SolucionesFragment extends Fragment {
     public SolucionesFragment() {
         page = 1;
         // Required empty public constructor
-        notix = NotixFactory.buildNotix(this.getContext());
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View fragment = inflater.inflate(R.layout.fragment_soluciones, container, false);
-        visitMessages();
-        setInfiniteList(fragment);
-        setSearchView();
-        return fragment;
     }
 
     public static SolucionesFragment SolucionesFragmentInstance(SearchView searchView) {
@@ -79,6 +66,18 @@ public class SolucionesFragment extends Fragment {
         SolucionesFragment f = new SolucionesFragment();
         f.searchView = searchView;
         return f;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View fragment = inflater.inflate(R.layout.fragment_soluciones, container, false);
+        notix = NotixFactory.buildNotix(this.getContext());
+        visitMessages();
+        setInfiniteList(fragment);
+        setSearchView();
+        return fragment;
     }
 
     void setInfiniteList(View fragment) {
@@ -328,17 +327,6 @@ public class SolucionesFragment extends Fragment {
         startActivity(intent);
     }
 
-    static class ViewHolder {
-        TextView nombre;
-        TextView subtitle;
-        TextView cliente;
-        TextView fecha;
-        TextView reporte;
-        TextView descripcion;
-        TextView user;
-        Button photos_button;
-    }
-
     private void visitMessages() {
         ArrayList<String> messages = new ArrayList<>();
         newItems = new ArrayList<>();
@@ -358,5 +346,16 @@ public class SolucionesFragment extends Fragment {
             }
         }
         notix.visitMessages(messages);
+    }
+
+    static class ViewHolder {
+        TextView nombre;
+        TextView subtitle;
+        TextView cliente;
+        TextView fecha;
+        TextView reporte;
+        TextView descripcion;
+        TextView user;
+        Button photos_button;
     }
 }

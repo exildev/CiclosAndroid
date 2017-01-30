@@ -97,7 +97,6 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
 
     public InformativoFragment() {
         page = 1;
-        notix = NotixFactory.buildNotix(this.getContext());
     }
 
     public static InformativoFragment InformativoFragmentInstance(SearchView searchView) {
@@ -113,6 +112,7 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View fragment = inflater.inflate(R.layout.fragment_informativo, container, false);
+        notix = NotixFactory.buildNotix(this.getContext());
         visitMessages();
         setInfiniteList(fragment);
         setSearchView();
@@ -460,13 +460,6 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
         });
     }
 
-    static class ViewHolder {
-        TextView nombre;
-        TextView subtitle;
-        TextView fecha;
-        TextView descripcion;
-    }
-
     private void visitMessages() {
         ArrayList<String> messages = new ArrayList<>();
         newItems = new ArrayList<>();
@@ -655,5 +648,12 @@ public class InformativoFragment extends Fragment implements GoogleApiClient.Con
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    static class ViewHolder {
+        TextView nombre;
+        TextView subtitle;
+        TextView fecha;
+        TextView descripcion;
     }
 }

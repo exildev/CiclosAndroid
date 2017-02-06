@@ -11,18 +11,19 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.RadioButton;
+import android.widget.LinearLayout;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -56,7 +57,8 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
     private static final int REQUEST_LOCATION_SETTINGS = 12;
 
     private int piscina;
-    private int planilla;
+    private int formulario;
+    private int registro;
     private double lat;
     private double lng;
 
@@ -79,13 +81,6 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
         hideLoading();
 
         piscina = getIntent().getIntExtra("piscina", -1);
-
-        if (getIntent().hasExtra("planilla")) {
-            planilla = getIntent().getIntExtra("planilla", -1);
-            getData();
-        } else {
-            planilla = -1;
-        }
 
         mGoogleClient = new GoogleApiClient.Builder(this)
                 .addApi(LocationServices.API)
@@ -112,27 +107,10 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
 
     public void send() {
         showLoading();
-        final CheckBox cepillado = (CheckBox) findViewById(R.id.cepillado);
-        final CheckBox aspirado = (CheckBox) findViewById(R.id.aspirado);
-        final CheckBox retrolavado = (CheckBox) findViewById(R.id.retrolavado);
-        final CheckBox aumento_agua = (CheckBox) findViewById(R.id.aumento_agua);
-        final CheckBox aplicacion_cloro = (CheckBox) findViewById(R.id.aplicacion_cloro);
-        final CheckBox aplicacion_sulfato_al = (CheckBox) findViewById(R.id.aplicacion_sulfato_al);
-        final CheckBox clasificador_alg = (CheckBox) findViewById(R.id.clasificador_agl);
+        final LinearLayout form_container = (LinearLayout) findViewById(R.id.form_container);
         final CheckBox espera = (CheckBox) findViewById(R.id.espera);
-        final RadioButton disminucion_ph = (RadioButton) findViewById(R.id.disminucion_ph);
-        final RadioButton aumento_ph = (RadioButton) findViewById(R.id.aumento_ph);
-        final TextInputEditText nivel_ph = (TextInputEditText) findViewById(R.id.nivel_ph);
-        final TextInputEditText nivel_cloro = (TextInputEditText) findViewById(R.id.nivel_cloro);
-        final TextInputEditText observaciones = (TextInputEditText) findViewById(R.id.observaciones);
-        final String latitud = planilla == -1 ? String.valueOf(myLocation.getLatitude()) : String.valueOf(lat);
-        final String longitud = planilla == -1 ? String.valueOf(myLocation.getLongitude()) : String.valueOf(lng);
+        String serviceUrl = getString(R.string.send_form, registro);
 
-        String serviceUrl = getString(R.string.planilla_form);
-
-        if (planilla != -1) {
-            serviceUrl = getString(R.string.planilla_edit, planilla);
-        }
         String url = getString(R.string.url, serviceUrl);
         final StringRequest loginRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
@@ -156,7 +134,7 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
                                 @Override
                                 public void onClick(View view) {
                                     container.setVisibility(View.GONE);
-                                    getData();
+                                    crearRegistro();
                                     Log.i("rety", "rety");
                                 }
                             });
@@ -176,42 +154,17 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                if (cepillado.isChecked()) {
-                    params.put("cepillado", "on");
-                }
-                if (aspirado.isChecked()) {
-                    params.put("aspirado", "on");
-                }
-                if (retrolavado.isChecked()) {
-                    params.put("retrolavado", "on");
-                }
-                if (aumento_agua.isChecked()) {
-                    params.put("aumento_agua", "on");
-                }
-                if (aplicacion_cloro.isChecked()) {
-                    params.put("aplicacion_cloro", "on");
-                }
-                if (aplicacion_sulfato_al.isChecked()) {
-                    params.put("aplicacion_sulfato_al", "on");
-                }
-                if (disminucion_ph.isChecked()) {
-                    params.put("disminucion_ph", "on");
-                }
-                if (aumento_ph.isChecked()) {
-                    params.put("aumento_ph", "on");
-                }
-                if (clasificador_alg.isChecked()) {
-                    params.put("clasificador_alg", "on");
+                for (int i = 1; i < form_container.getChildCount(); i++) {
+                    TextInputLayout field_layout = (TextInputLayout) form_container.getChildAt(i);
+                    String name = field_layout.getHint().toString();
+                    String value = field_layout.getEditText().getText().toString();
+                    params.put(name, value);
                 }
                 if (espera.isChecked()) {
                     params.put("espera", "on");
                 }
-                params.put("nivel_cloro", nivel_cloro.getText().toString());
-                params.put("nivel_ph", nivel_ph.getText().toString());
-                params.put("observaciones", observaciones.getText().toString());
-                params.put("piscina", String.valueOf(piscina));
-                params.put("latitud", latitud);
-                params.put("longitud", longitud);
+                params.put("latitud", String.valueOf(lat));
+                params.put("longitud", String.valueOf(lng));
                 return params;
             }
         };
@@ -219,58 +172,88 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
         VolleySingleton.getInstance(this).addToRequestQueue(loginRequest);
     }
 
-    void getData() {
+    void crearRegistro() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            validPermissions();
+            return;
+        }
+        Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
+                mGoogleClient);
+        if (mLastLocation != null) {
+            myLocation = mLastLocation;
+        }
+        try {
+            final int operario = HomeActivity.USER.getInt("id");
+            showLoading();
+            String serviceUrl = getString(R.string.crear_registro);
+            String url = getString(R.string.url, serviceUrl);
+            StringRequest loginRequest = new StringRequest(Request.Method.POST, url,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            try {
+                                Log.i("REGISTRO", response.toString());
+                                hideLoading();
+                                JSONObject r = new JSONObject(response);
+                                registro = r.getInt("id");
+                                lat = r.getDouble("latitud");
+                                lng = r.getDouble("longitud");
+                                renderForm();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            //Log.i("error", new String(error.networkResponse.data));
+                            hideLoading();
+                            final CardView container = (CardView) findViewById(R.id.error_container);
+                            container.setVisibility(View.VISIBLE);
+                            VolleySingleton.manageError(PlanillaActivity.this, error, container, new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    container.setVisibility(View.GONE);
+                                    crearRegistro();
+                                    Log.i("rety", "rety");
+                                }
+                            });
+                            Log.e("Activities", error.toString());
+                        }
+                    }) {
+                @Override
+                protected Map<String, String> getParams() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("formulario", String.valueOf(formulario));
+                    params.put("operario", String.valueOf(operario));
+                    params.put("latitud", myLocation.getLatitude() + "");
+                    params.put("longitud", myLocation.getLongitude() + "");
+                    return params;
+                }
+            };
+            loginRequest.setRetryPolicy(new DefaultRetryPolicy(0, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            VolleySingleton.getInstance(this).addToRequestQueue(loginRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void renderForm() {
         showLoading();
-        String serviceUrl = getString(R.string.planilla_info, planilla);
+        String serviceUrl = getString(R.string.show_form, formulario);
         String url = getString(R.string.url, serviceUrl);
         JsonObjectRequest reportesRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
                     hideLoading();
+                    Log.i("Form", response.toString());
                     JSONArray object_list = response.getJSONArray("object_list");
-
-                    if (object_list.length() > 0) {
-                        JSONObject campo = object_list.getJSONObject(0);
-                        Log.i("json", campo.toString());
-                        CheckBox cepillado = (CheckBox) findViewById(R.id.cepillado);
-                        CheckBox aspirado = (CheckBox) findViewById(R.id.aspirado);
-                        CheckBox retrolavado = (CheckBox) findViewById(R.id.retrolavado);
-                        CheckBox aumento_agua = (CheckBox) findViewById(R.id.aumento_agua);
-                        CheckBox aplicacion_cloro = (CheckBox) findViewById(R.id.aplicacion_cloro);
-                        CheckBox aplicacion_sulfato_al = (CheckBox) findViewById(R.id.aplicacion_sulfato_al);
-                        CheckBox clasificador_alg = (CheckBox) findViewById(R.id.clasificador_agl);
-                        CheckBox espera = (CheckBox) findViewById(R.id.espera);
-                        RadioButton disminucion_ph = (RadioButton) findViewById(R.id.disminucion_ph);
-                        RadioButton aumento_ph = (RadioButton) findViewById(R.id.aumento_ph);
-                        TextInputEditText nivel_ph = (TextInputEditText) findViewById(R.id.nivel_ph);
-                        TextInputEditText nivel_cloro = (TextInputEditText) findViewById(R.id.nivel_cloro);
-                        TextInputEditText observaciones = (TextInputEditText) findViewById(R.id.observaciones);
-
-                        cepillado.setChecked(campo.getBoolean("cepillado"));
-                        aspirado.setChecked(campo.getBoolean("aspirado"));
-                        retrolavado.setChecked(campo.getBoolean("retrolavado"));
-                        aumento_agua.setChecked(campo.getBoolean("aumento_agua"));
-                        aplicacion_cloro.setChecked(campo.getBoolean("aplicacion_cloro"));
-                        aplicacion_sulfato_al.setChecked(campo.getBoolean("aplicacion_sulfato_al"));
-                        clasificador_alg.setChecked(campo.getBoolean("clasificador_alg"));
-                        espera.setChecked(campo.getBoolean("espera"));
-                        disminucion_ph.setChecked(campo.getBoolean("disminucion_ph"));
-                        aumento_ph.setChecked(campo.getBoolean("aumento_ph"));
-                        if (campo.has("nivel_ph") && !campo.get("nivel_ph").equals(null)) {
-                            nivel_ph.setText(String.valueOf(campo.getDouble("nivel_ph")));
-                        }
-                        if (campo.has("nivel_cloro") && !campo.get("nivel_cloro").equals(null)) {
-                            nivel_cloro.setText(String.valueOf(campo.getDouble("nivel_cloro")));
-                        }
-                        if (campo.has("observaciones") && !campo.get("observaciones").equals(nivel_cloro)) {
-                            observaciones.setText(campo.getString("observaciones"));
-                        }
-                        lat = campo.getDouble("latitud");
-                        lng = campo.getDouble("longitud");
-                        Log.i("json", campo.toString());
+                    for (int i = 0; i < object_list.length(); i++) {
+                        appendField(object_list.getJSONObject(i));
                     }
-                } catch (JSONException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -284,7 +267,7 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
                     @Override
                     public void onClick(View view) {
                         container.setVisibility(View.GONE);
-                        getData();
+                        renderForm();
                         Log.i("rety", "rety");
                     }
                 });
@@ -293,6 +276,18 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
         });
 
         VolleySingleton.getInstance(this).addToRequestQueue(reportesRequest);
+    }
+
+    void appendField(JSONObject field) {
+        LinearLayout form_container = (LinearLayout) findViewById(R.id.form_container);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        TextInputLayout fieldView = (TextInputLayout) inflater.inflate(R.layout.field, form_container, false);
+        try {
+            fieldView.setHint(field.getString("nombre"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        form_container.addView(fieldView);
     }
 
     private void showLoading() {
@@ -418,6 +413,17 @@ public class PlanillaActivity extends AppCompatActivity implements GoogleApiClie
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         createLocationRequest();
+        if (getIntent().hasExtra("formulario") && !getIntent().hasExtra("registro")) {
+            try {
+                JSONObject formJson = new JSONObject(getIntent().getStringExtra("formulario"));
+                formulario = formJson.getInt("id");
+                crearRegistro();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        } else {
+            formulario = -1;
+        }
     }
 
     @Override

@@ -275,37 +275,29 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                         holder.title.setText(planilla.getNombreP());
                         holder.cliente.setText(planilla.getNombreT());
 
-                        if (planilla.getPlanilla() != null && (planilla.getSalida() != null && planilla.getSalida()) && (planilla.getEspera() == null || !planilla.getEspera())) {
-                            holder.action_image.setImageResource(R.drawable.ic_done_all_24dp);
-                        } else if (planilla.getPlanilla() != null && (planilla.getSalida() == null || !planilla.getSalida()) && (planilla.getEspera() == null || !planilla.getEspera())) {
-                            holder.action_image.setImageResource(R.drawable.ic_done_24dp);
+                        if (planilla.getRegistros() == null) {
+                            holder.action_image.setImageResource(R.drawable.ic_content_paste_24dp);
                             holder.info_btn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    saveSalida(planilla);
+                                    Intent intent = new Intent(getActivity(), PlanillaActivity.class);
+                                    intent.putExtra("formulario", planilla.getFormulario().toString());
+                                    PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
                                 }
                             });
-                        } else if (planilla.getPlanilla() != null && (planilla.getSalida() == null || !planilla.getSalida()) && (planilla.getEspera() != null && planilla.getEspera())) {
+                        } else if (false) {
+                            holder.action_image.setImageResource(R.drawable.ic_done_all_24dp);
+                            holder.info_btn.setOnClickListener(null);
+                        } else {
                             holder.action_image.setImageResource(R.drawable.ic_edit_24dp);
                             holder.info_btn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     Log.i("piscina", planilla.getCampana() + "");
-                                    Log.i("planilla", planilla.getPlanilla() + "");
+                                    //Log.i("planilla", planilla.getPlanilla() + "");
                                     Intent intent = new Intent(getActivity(), PlanillaActivity.class);
                                     intent.putExtra("piscina", planilla.getCampana());
-                                    intent.putExtra("planilla", planilla.getPlanilla());
-                                    PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
-                                }
-                            });
-                        } else if (planilla.getPlanilla() == null) {
-                            holder.action_image.setImageResource(R.drawable.ic_content_paste_24dp);
-                            holder.info_btn.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    Log.i("piscina", planilla.getCampana() + "");
-                                    Intent intent = new Intent(getActivity(), PlanillaActivity.class);
-                                    intent.putExtra("piscina", planilla.getCampana());
+                                    //intent.putExtra("planilla", planilla.getPlanilla());
                                     PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
                                 }
                             });
@@ -349,8 +341,12 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             String nombreP = campo.getString("nombreP");
                             int campana = campo.getInt("campana");
                             int supervisor_id = campo.getInt("supervisor_id");
-                            Integer planilla = campo.get("planilla").equals(null) ? null : campo.getInt("planilla");
-                            Boolean salida = campo.get("salida").equals(null) ? null : campo.getBoolean("salida");
+                            JSONObject formularios = campo.getJSONObject("formularios");
+                            JSONObject registro = null;
+                            if (formularios.getJSONArray("registro").length() > 0) {
+                                registro = formularios.getJSONArray("registro").getJSONObject(0);
+                            }
+                            formularios = formularios.getJSONArray("formularios").getJSONObject(0);
 
                             Integer orden = null;
                             if (campo.has("orden")) {
@@ -368,7 +364,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             if (campo.has("longitud")) {
                                 longitud = campo.get("longitud").equals(null) ? null : campo.getDouble("longitud");
                             }
-                            infiniteListView.addNewItem(new Planilla(espera, nombreT, nombreP, campana, supervisor_id, planilla, salida, orden, id, latitud, longitud));
+                            infiniteListView.addNewItem(new Planilla(espera, nombreT, nombreP, campana, supervisor_id, formularios, registro, orden, id, latitud, longitud));
                         }
                         Log.i("count", response.getInt("num_rows") + "");
                         if (response.has("count")) {
@@ -481,7 +477,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            salida(planilla.getPlanilla(), loading);
+                            //salida(planilla.getPlanilla(), loading);
                         }
                     },
                     new Response.ErrorListener() {

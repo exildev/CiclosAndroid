@@ -36,6 +36,7 @@ import tarek360.animated.icons.NotificationAlertIcon;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, onNotixListener {
 
+    public static JSONObject USER;
     private boolean inHome = true;
     private Menu mMenu;
     private Notix notix;
@@ -85,6 +86,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
                 View headerLayout = navigationView.getHeaderView(0);
                 JSONObject user = new JSONObject(getIntent().getStringExtra("user"));
+                USER = user;
                 TextView username = (TextView) headerLayout.findViewById(R.id.username_header);
                 TextView email = (TextView) headerLayout.findViewById(R.id.email_header);
                 username.setText(user.getString("first_name") + " " + user.getString("last_name"));
@@ -221,7 +223,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(this, RutaPActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_rutas || id == R.id.rutas_btn) {
-            startActivity(new Intent(this, RutaActivity.class));
+            Intent intent = new Intent(this, RutaActivity.class);
+            intent.putExtra("user", getIntent().getStringExtra("user"));
+            startActivity(intent);
         } else if (id == R.id.nav_recordatorio) {
             startActivity(new Intent(this, AlarmActivity.class));
         } else if (id == R.id.nav_actividades || id == R.id.actividades_btn) {

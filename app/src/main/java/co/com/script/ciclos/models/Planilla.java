@@ -1,27 +1,29 @@
 package co.com.script.ciclos.models;
 
 
+import org.json.JSONObject;
+
 public class Planilla {
     private Boolean espera;
     private String nombreT;
     private String nombreP;
     private int campana;
     private int supervisor_id;
-    private Integer planilla;
-    private Boolean salida;
+    private JSONObject formulario;
+    private JSONObject registro;
     private Integer orden;
     private Integer id;
     private Double latitud;
     private Double longitud;
 
-    public Planilla(Boolean espera, String nombreT, String nombreP, int campana, int supervisor_id, Integer planilla, Boolean salida, Integer orden, Integer id, Double latitud, Double longitud) {
+    public Planilla(Boolean espera, String nombreT, String nombreP, int campana, int supervisor_id, JSONObject formulario, JSONObject registro, Integer orden, Integer id, Double latitud, Double longitud) {
         this.espera = espera;
         this.nombreT = nombreT;
         this.nombreP = nombreP;
         this.campana = campana;
         this.supervisor_id = supervisor_id;
-        this.planilla = planilla;
-        this.salida = salida;
+        this.formulario = formulario;
+        this.registro = registro;
         this.orden = orden;
         this.id = id;
         this.latitud = latitud;
@@ -48,12 +50,12 @@ public class Planilla {
         return supervisor_id;
     }
 
-    public Integer getPlanilla() {
-        return planilla;
+    public JSONObject getRegistros() {
+        return registro;
     }
 
-    public Boolean getSalida() {
-        return salida;
+    public JSONObject getFormulario() {
+        return formulario;
     }
 
     public Integer getOrden() {

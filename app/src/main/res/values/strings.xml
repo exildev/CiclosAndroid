@@ -146,7 +146,7 @@
     <string name="disminuci_n_de_ph">Disminución de PH</string>
     <string name="aumento_de_ph">Aumento de PH</string>
     <string name="nivel_ph">Nivel PH</string>
-    <string name="nivel_cloro">Nivel Cloro</string>
+    <string name="dummie_hint">Test</string>
     <string name="observaciones">Observaciones</string>
     <string name="poner_en_espera">Poner en espera</string>
     <string name="cliente_title">Cliente</string>
@@ -236,4 +236,7 @@
     <string name="acerca_de">Acerca de</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
     <string name="title_activity_maps">Map</string>
+    <string name="choose_form">Escojer formlario</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

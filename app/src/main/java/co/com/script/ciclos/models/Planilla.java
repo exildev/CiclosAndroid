@@ -1,6 +1,7 @@
 package co.com.script.ciclos.models;
 
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class Planilla {
@@ -9,20 +10,20 @@ public class Planilla {
     private String nombreP;
     private int campana;
     private int supervisor_id;
-    private JSONObject formulario;
+    private JSONArray formularios;
     private JSONObject registro;
     private Integer orden;
     private Integer id;
     private Double latitud;
     private Double longitud;
 
-    public Planilla(Boolean espera, String nombreT, String nombreP, int campana, int supervisor_id, JSONObject formulario, JSONObject registro, Integer orden, Integer id, Double latitud, Double longitud) {
+    public Planilla(Boolean espera, String nombreT, String nombreP, int campana, int supervisor_id, JSONArray formularios, JSONObject registro, Integer orden, Integer id, Double latitud, Double longitud) {
         this.espera = espera;
         this.nombreT = nombreT;
         this.nombreP = nombreP;
         this.campana = campana;
         this.supervisor_id = supervisor_id;
-        this.formulario = formulario;
+        this.formularios = formularios;
         this.registro = registro;
         this.orden = orden;
         this.id = id;
@@ -54,8 +55,8 @@ public class Planilla {
         return registro;
     }
 
-    public JSONObject getFormulario() {
-        return formulario;
+    public JSONArray getFormularios() {
+        return formularios;
     }
 
     public Integer getOrden() {

@@ -27,7 +27,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -187,6 +190,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
         private GoogleApiClient mGoogleClient;
         private LocationRequest mLocationRequest;
         private Location myLocation;
+        private int reasonSelected = 1;
 
         public PlaceholderFragment() {
         }
@@ -280,11 +284,10 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             holder.info_btn.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(getActivity(), PlanillaActivity.class);
-                                    intent.putExtra("formulario", planilla.getFormulario().toString());
-                                    PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
+                                    selectForm(planilla.getFormularios());
                                 }
                             });
+
                         } else if (false) {
                             holder.action_image.setImageResource(R.drawable.ic_done_all_24dp);
                             holder.info_btn.setOnClickListener(null);
@@ -343,10 +346,10 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             int supervisor_id = campo.getInt("supervisor_id");
                             JSONObject formularios = campo.getJSONObject("formularios");
                             JSONObject registro = null;
-                            if (formularios.getJSONArray("registro").length() > 0) {
-                                registro = formularios.getJSONArray("registro").getJSONObject(0);
+                            if (!formularios.get("registros").equals(null)) {
+                                registro = formularios.getJSONObject("registros");
                             }
-                            formularios = formularios.getJSONArray("formularios").getJSONObject(0);
+                            JSONArray formulario = formularios.getJSONArray("formularios");
 
                             Integer orden = null;
                             if (campo.has("orden")) {
@@ -364,7 +367,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                             if (campo.has("longitud")) {
                                 longitud = campo.get("longitud").equals(null) ? null : campo.getDouble("longitud");
                             }
-                            infiniteListView.addNewItem(new Planilla(espera, nombreT, nombreP, campana, supervisor_id, formularios, registro, orden, id, latitud, longitud));
+                            infiniteListView.addNewItem(new Planilla(espera, nombreT, nombreP, campana, supervisor_id, formulario, registro, orden, id, latitud, longitud));
                         }
                         Log.i("count", response.getInt("num_rows") + "");
                         if (response.has("count")) {
@@ -457,6 +460,58 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
             };
             loginRequest.setRetryPolicy(new DefaultRetryPolicy(0, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             VolleySingleton.getInstance(this.getContext()).addToRequestQueue(loginRequest);
+        }
+
+        private void selectForm(final JSONArray formularios) {
+            MaterialDialog dialog = new MaterialDialog.Builder(this.getContext())
+                    .title(R.string.choose_form)
+                    .customView(R.layout.form_select, true)
+                    .positiveText(R.string.aceptar)
+                    .negativeText(R.string.cancelar)
+                    .autoDismiss(false)
+                    .onNegative(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .onPositive(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                            try {
+                                Intent intent = new Intent(getActivity(), PlanillaActivity.class);
+                                intent.putExtra("formulario", formularios.get(reasonSelected).toString());
+                                PlaceholderFragment.this.startActivityForResult(intent, PLANILLA_RESULT);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            dialog.dismiss();
+                        }
+                    })
+                    .show();
+            View custom = dialog.getCustomView();
+            assert custom != null;
+            RadioGroup radioGroup = (RadioGroup) custom.findViewById(R.id.radio_group);
+            LayoutInflater inflater = LayoutInflater.from(radioGroup.getContext());
+            for (int i = 0; i < formularios.length(); i++) {
+                try {
+                    final JSONObject item = formularios.getJSONObject(i);
+                    RadioButton radio = (RadioButton) inflater.inflate(R.layout.form_item, radioGroup, false);
+                    radio.setText(item.getString("nombre"));
+                    final int index = i;
+                    radio.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                            if (b) {
+                                reasonSelected = index;
+                            }
+                        }
+                    });
+                    radioGroup.addView(radio);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         void salida(final Planilla planilla) {
@@ -671,7 +726,7 @@ public class RutaActivity extends AppCompatActivity implements onNotixListener {
                     AlertDialog alert = builder.create();
                     alert.show();
                 }
-            } else if (requestCode == PLANILLA_RESULT && resultCode == RESULT_OK) {
+            } else if (requestCode == PLANILLA_RESULT) {
                 int status = data.getIntExtra("status", -1);
                 String response = data.getStringExtra("response");
                 if (status == 200) {

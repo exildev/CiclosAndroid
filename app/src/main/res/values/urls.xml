@@ -13,9 +13,9 @@
     <string name="reporte_informativo_form">/reportes/reporte/informativo/form/</string>
     <string name="planilla_form">/actividades/planilladiaria/form/</string>
     <string name="planilla_edit">/actividades/planilladiaria/edit/form/%1$d/</string>
-    <string name="crear_registro">/fomulario/form/registro/create/</string>
-    <string name="show_form">/fomulario/list/campo/?formulario=%1$d</string>
-    <string name="send_form">/fomulario/form/registro/%1$d/</string>
+    <string name="crear_registro">/formulario/form/registro/create/</string>
+    <string name="show_form">/formulario/list/campo/?formularios=%1$d</string>
+    <string name="send_form">/formulario/form/registro/%1$d/</string>
     <string name="get_reporte_tipo">/reportes/tiporeporte/list/</string>
     <string name="reporte_form">/reportes/reporte/form/</string>
     <string name="foto_reporte">/reportes/fotoreporte/list/?reporte=</string>

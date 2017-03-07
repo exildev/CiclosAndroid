@@ -6,18 +6,14 @@ package co.com.script.ciclos.models;
 
 public class Solucion {
     private int id;
-    private int clienteId;
-    private String cliente;
     private String descripcion;
     private String fecha;
     private String nombre;
     private String reporte;
     private String user;
 
-    public Solucion(int id, int clienteId, String cliente, String descripcion, String fecha, String nombre, String reporte, String user) {
+    public Solucion(int id, String descripcion, String fecha, String nombre, String reporte, String user) {
         this.id = id;
-        this.clienteId = clienteId;
-        this.cliente = cliente;
         this.descripcion = descripcion;
         this.fecha = fecha;
         this.nombre = nombre;
@@ -27,14 +23,6 @@ public class Solucion {
 
     public int getId() {
         return id;
-    }
-
-    public int getClienteId() {
-        return clienteId;
-    }
-
-    public String getCliente() {
-        return cliente;
     }
 
     public String getDescripcion() {

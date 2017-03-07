@@ -27,7 +27,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.*;
 
 import co.com.script.ciclos.helper.SimpleItemTouchHelperCallback;
 import co.com.script.ciclos.models.Asignacion;
@@ -191,11 +198,14 @@ public class RutaPActivity extends AppCompatActivity implements ItemAdapter.OnSt
                     public void onErrorResponse(VolleyError error) {
                         Log.e("login", error.toString());
                         loading.dismiss();
-                        Snackbar.make(findViewById(R.id.toolbar), "Hubo un error al realizar la operacion", 800).show();
+                        Snackbar.make(findViewById(R.id.toolbar), R.string.error_response, 800).show();
                         ItemAdapter.itemList.clear();
                         page = 1;
                         loadItems();
-                        Log.i("error", new String(error.networkResponse.data));
+                        String[] errStrings = new String(error.networkResponse.data).split("\n");
+                        for (String string : errStrings){
+                            Log.i("web", string);
+                        }
                     }
                 }) {
             @Override

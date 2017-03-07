@@ -132,9 +132,8 @@ public class SolucionesFragment extends Fragment {
                 Solucion solucion = itemList.get(position);
                 if (solucion != null) {
                     holder.nombre.setText(solucion.getNombre());
-                    holder.subtitle.setText(solucion.getCliente() + "\n" + solucion.getFecha());
+                    holder.subtitle.setText(solucion.getFecha());
                     holder.reporte.setText(solucion.getReporte());
-                    holder.cliente.setText(solucion.getCliente());
                     holder.descripcion.setText(solucion.getDescripcion());
                     holder.fecha.setText(solucion.getFecha());
 
@@ -241,7 +240,7 @@ public class SolucionesFragment extends Fragment {
     void getReportes() {
         infiniteListView.startLoading();
         String url = getString(R.string.url_simple)
-                + "/mantenimiento/service/mantanimiento/list/?page=" + page + "&search=" + search;
+                + "/reportes/service/solucion/list/?page=" + page + "&search=" + search;
         JsonObjectRequest reportesRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -254,16 +253,15 @@ public class SolucionesFragment extends Fragment {
                     }
                     for (int i = 0; i < object_list.length(); i++) {
                         JSONObject campo = object_list.getJSONObject(i);
+                        Log.i("solucion", campo.toString());
                         int id = campo.getInt("id");
-                        int clienteId = campo.getInt("cliente_id");
-                        String cliente = campo.getString("nombreC") + " " + campo.getString("apellidosC");
                         String descripcion = campo.getString("descripcion");
                         String fecha = campo.getString("fecha");
                         String nombre = campo.getString("nombre");
                         String reporte = campo.getString("reporte__nombre");
                         String user = campo.getString("user");
 
-                        infiniteListView.addNewItem(new Solucion(id, clienteId, cliente, descripcion, fecha, nombre, reporte, user));
+                        infiniteListView.addNewItem(new Solucion(id, descripcion, fecha, nombre, reporte, user));
                     }
                     if (itemList.size() == count) {
                         infiniteListView.hasMore(false);
@@ -323,7 +321,7 @@ public class SolucionesFragment extends Fragment {
         Intent intent = new Intent(this.getActivity(), GalleryActivity.class);
         intent.putExtra("id", id);
         intent.putExtra("url", getString(R.string.url_simple)
-                + "/mantenimiento/service/fotomantenimiento/list/?mantenimiento=");
+                + getString(R.string.solucion_fotos));
         startActivity(intent);
     }
 

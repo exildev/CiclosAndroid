@@ -1,4 +1,4 @@
-package co.com.exile.ciclos;
+package co.com.script.ciclos;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

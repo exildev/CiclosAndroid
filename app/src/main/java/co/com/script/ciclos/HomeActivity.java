@@ -154,7 +154,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.main_frame, fragment)
                     .commit();
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            toolbar.setTitle("Piscix");
+            toolbar.setTitle(R.string.title_activity_home);
         } else {
             super.onBackPressed();
         }
@@ -264,7 +264,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle(getString(R.string.informativos));
         } else if (id == R.id.nav_about) {
-            startActivity(new Intent(this, AboutActivity.class));
+            //startActivity(new Intent(this, AboutActivity.class));
         } else if (id == R.id.nav_logout) {
             User.delete(this);
             String url = getString(R.string.url_simple) + "/usuarios/logout/";
